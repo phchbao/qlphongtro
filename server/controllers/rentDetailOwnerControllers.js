@@ -59,7 +59,7 @@ const createRentDetail = async (req, res) => {
     isHidden: false,
   });
   if (rentDetailExists) {
-    throw new BadRequestError("Chi tiết thuê đã tạo rồi");
+    throw new BadRequestError("Hóa đơn đã tạo rồi");
   }
 
   // check if rent detail already exists for this real estate
@@ -68,7 +68,7 @@ const createRentDetail = async (req, res) => {
   });
   if (rentDetailExistsForRoom) {
     throw new BadRequestError(
-      "Chi tiết thuê đã được tạo cho hợp đồng này!"
+      "Hóa đơn đã được tạo cho hợp đồng này!"
     );
   }
 
@@ -86,7 +86,7 @@ const createRentDetail = async (req, res) => {
 
   res
     .status(201)
-    .json({ rentDetail, msg: "Tạo chi tiết thuê thành công", success: true });
+    .json({ rentDetail, msg: "Tạo hóa đơn thành công", success: true });
 };
 
 /**
@@ -134,7 +134,7 @@ const getSingleRentDetailsOwnerView = async (req, res) => {
     });
 
   if (!rentDetail||rentDetail.isHidden) {
-    throw new NotFoundError("Không tìm thấy chi tiết thuê");
+    throw new NotFoundError("Không tìm thấy hóa đơn");
   }
 
   const rentStatus = await rentDetail.isRentPaid();
@@ -153,7 +153,7 @@ const createPaymentHistory = async (req, res) => {
   // check if rent detail exists
   const checkRentDetail = await RentDetail.findById(rentDetail);
   if (!checkRentDetail) {
-    throw new NotFoundError("Không tìm thấy chi tiết thuê");
+    throw new NotFoundError("Không tìm thấy hóa đơn");
   }
   const rentStatus = await checkRentDetail.isRentPaid();
 

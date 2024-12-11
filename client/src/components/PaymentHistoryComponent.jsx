@@ -27,7 +27,7 @@ const PaymentHistoryComponent = ({
   if (allPaymentHistory?.length > 0)
     return (
       <div className="flex flex-col mt-10">
-        <h4 className="mb-4 font-heading font-bold">Payment History</h4>
+        <h4 className="mb-4 font-heading font-bold">Lịch sử thanh toán</h4>
         <div className="overflow-x-auto">
           <div className="inline-block min-w-full">
             <div className="overflow-hidden rounded-md">

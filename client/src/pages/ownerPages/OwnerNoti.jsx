@@ -44,7 +44,7 @@ const OwnerNoti = () => {
 
   return (
     <div className="flex flex-col flex-wrap justify-center gap-8 md:justify-start mt-12 mb-8 mx-2 md:mx-4">
-      <h1 className="font-heading font-bold">Noti</h1>
+      <h1 className="font-heading font-bold">Thông báo</h1>
       <div
         className="flex gap-4"
         style={{

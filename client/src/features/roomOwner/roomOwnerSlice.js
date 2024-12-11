@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axiosFetch from "../../utils/axiosCreate";
-
+import fs from "fs";
 export const postRoom = createAsyncThunk(
   "postRoom",
   async ({ formData }, thunkAPI) => {
@@ -27,14 +27,17 @@ export const getPersonalRoom = createAsyncThunk(
 
 export const getAllOwnerRoom = createAsyncThunk(
   "getAllOwnerRoom",
-  async ({ page, status, search, }, thunkAPI) => {
+  async ({ page, status, search, category, priceFilter, province, district }, thunkAPI) => {
     try {
       let url = `owner/tro-so?page=${page}&status=${status}`;
-      if (search) {
-        url = url + `&search=${search}`;
-      }
+      if (search) url += `&search=${search}`;
+      if (category && category !== "all") url += `&category=${category}`;
+      if (priceFilter) url += `&priceFilter=${priceFilter}`;
+      if (province) url += `&province=${province}`;
+      if (district) url += `&district=${district}`;
+      
       const { data } = await axiosFetch.get(url);
-      return await data;
+      return data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.response.data.msg);
     }
@@ -82,30 +85,23 @@ export const deleteRoom = createAsyncThunk(
   }
 );
 
-export const fetchRoomStats = createAsyncThunk(
-  "fetchRoomStats",
-  async (_, thunkAPI) => {
+export const importRooms = createAsyncThunk(
+  "importRooms",
+  async (formData, thunkAPI) => {
     try {
-      console.log("Fetching room stats from API...");
-      const { data } = await axiosFetch.get("/owner/manage/rooms/stats");
-      console.log("API response:", data);
+      const { data } = await axiosFetch.post("/owner/tro-so/import", formData);
       return data;
     } catch (error) {
-      console.error("API error:", error.response?.data || error.message);
-      return thunkAPI.rejectWithValue(error.response?.data?.msg || "Error fetching room stats");
+      return thunkAPI.rejectWithValue(error.response.data.msg);
     }
   }
 );
-
 
 const roomOwnerSlice = createSlice({
   name: "room",
   initialState: {
     allRoom: null,
     room: null,
-    hidden: null,
-    visible: null,
-    available: null,
     isLoading: false,
     alertFlag: false,
     alertMsg: "",
@@ -218,22 +214,21 @@ const roomOwnerSlice = createSlice({
         state.alertMsg = action.payload;
         state.alertType = "error";
       })
-      .addCase(fetchRoomStats.pending, (state) => {
+      .addCase(importRooms.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(fetchRoomStats.fulfilled, (state, action) => {
+      .addCase(importRooms.fulfilled, (state, action) => {
         state.isLoading = false;
-        state.hidden = action.payload.hidden;
-        state.visible = action.payload.visible;
-        state.available = action.payload.available;
-        state.alertFlag = false;
+        state.alertFlag = true;
+        state.alertMsg = "Nhập phòng thành công";
+        state.alertType = "success";
       })
-      .addCase(fetchRoomStats.rejected, (state, action) => {
+      .addCase(importRooms.rejected, (state, action) => {
         state.isLoading = false;
         state.alertFlag = true;
         state.alertMsg = action.payload;
         state.alertType = "error";
-      });
+      })
   },
 });
 

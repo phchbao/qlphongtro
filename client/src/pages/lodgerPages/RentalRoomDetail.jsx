@@ -97,7 +97,7 @@ const RentalRoomDetail = () => {
                     sx={{ color: "#fff" }}
                     startIcon={<MapsHomeWorkIcon />}
                   >
-                    Chi tiết thuê
+                    Xem hóa đơn
                   </Button>
                 </Link>
                 <Link to={`/lodger/send-complaint/${slug}`}>

@@ -15,19 +15,20 @@ const AllContacts = () => {
   const dispatch = useDispatch();
   const { contacts, isLoading } = useSelector((state) => state.lodgerUser);
 
-  const [name, setName] = useState("");
+  const [searchQuery, setSearchQuery] = useState(""); // Đổi tên biến để bao hàm cả tìm kiếm tên hoặc email
 
   useEffect(() => {
+    // Lấy toàn bộ danh sách liên hệ khi vừa tải trang
     dispatch(getAllContacts({ name: "" }));
   }, [dispatch]);
 
   const handleSearchChange = (e) => {
-    setName(e.target.value);
+    setSearchQuery(e.target.value); // Cập nhật giá trị tìm kiếm
   };
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    dispatch(getAllContacts({ name }));
+    dispatch(getAllContacts({ name: searchQuery })); // Gửi truy vấn tìm kiếm tên hoặc email
   };
 
   return (
@@ -46,8 +47,8 @@ const AllContacts = () => {
                 name="search"
                 type="text"
                 size="small"
-                placeholder="Nhập tên người dùng..."
-                value={name}
+                placeholder="Nhập tên hoặc email..."
+                value={searchQuery}
                 onChange={handleSearchChange}
                 endAdornment={
                   <InputAdornment position="end">

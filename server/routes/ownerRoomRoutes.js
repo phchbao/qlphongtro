@@ -7,7 +7,7 @@ import {
   getSingleRoom,
   updateRoomDetails,
   deleteRoom,
-  getRoomStats,
+  importRooms,
 } from "../controllers/ownerRoomController.js";
 import upload from "../middleware/multerImageMiddleware.js";
 import { cloudinaryMultipleUpload } from "../middleware/cloudinaryUpload.js";
@@ -48,6 +48,9 @@ router.patch("/update/:slug", updateRoomDetails);
  */
 router.delete("/delete/:slug", deleteRoom);
 
-router.get("/owner/manage/rooms/stats", getRoomStats);
+
+
+router.post("/import", importRooms);
+
 
 export default router;

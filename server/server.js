@@ -75,8 +75,9 @@ app.use(function (req, res, next) {
 });
 
 app.use("/api/auth", authRoutes);
-app.use("/api/owner/manage/rooms/stats", authorizeOwnerUser, ownerRoomRoutes);
+
 app.use("/api/owner/tro-so", authorizeOwnerUser, ownerRoomRoutes);
+
 app.use("/api/lodger/tro-so", authorizeLodgerUser, lodgerRoomRoutes);
 
 app.use("/api/owner", authorizeOwnerUser, ownerUserRoutes);

@@ -131,7 +131,7 @@ const getAllContacts = async (req, res) => {
   const { userId } = req.user;
   const { name } = req.query;
 
-  // Get the current owner user's contact list
+  // Lấy danh sách liên hệ của người dùng hiện tại
   const currentLodgerUser = await LodgerUser.findById(userId).populate({
     path: "contacts",
     select: "-contacts -accountVerificationToken -createdAt -updatedAt -__v",
@@ -139,22 +139,26 @@ const getAllContacts = async (req, res) => {
 
   if (!currentLodgerUser) throw new NotFoundError("User not found");
 
-  let contacts = currentLodgerUser.contacts; // Get the current owner user's contact list
-  // Filter the contact list by name if a name is provided in the query
+  let contacts = currentLodgerUser.contacts; // Lấy danh sách liên hệ
+
+  // Lọc danh sách theo tên hoặc email nếu tham số `name` được cung cấp
   if (name) {
+    const lowerCaseName = name.toLowerCase();
     contacts = contacts.filter((contact) => {
       return (
-        contact.firstName.toLowerCase().includes(name.toLowerCase()) ||
-        contact.lastName.toLowerCase().includes(name.toLowerCase())
+        contact.firstName.toLowerCase().includes(lowerCaseName) ||
+        contact.lastName.toLowerCase().includes(lowerCaseName) ||
+        (contact.email && contact.email.toLowerCase().includes(lowerCaseName))
       );
     });
   }
 
-  // reverse the contact list so that the most recent contact is at the top
+  // Đảo ngược danh sách để liên hệ mới nhất nằm ở đầu
   contacts = contacts.reverse();
 
   res.json({ contacts });
 };
+
 
 export {
   getSingleOwnerUser,

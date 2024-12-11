@@ -1,0 +1,112 @@
+[{
+  "_id": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "firstName": "Văn A",
+  "lastName": "Phan",
+  "email": "hiryuum3t4@gmail.com",
+  "address": "Chưa cập nhật",
+  "phoneNumber": "0362214369",
+  "dateOfBirth": "00-00-0000",
+  "gender": "Không muốn trả lời",
+  "profileImage": "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467695/tro-so-system/profileImages/chjopsfybdqibwwzmdla.png",
+  "contacts": [
+    {
+      "$oid": "67565f9e7bd6e09b863d84fc"
+    },
+    {
+      "$oid": "6752ac9287804d45e8f6d41a"
+    }
+  ],
+  "password": "$2a$10$6MSJXLjHCsQMZFc9YR83beprMMMoAMefe5obn2W.y.Z2.5u6n4Hu6",
+  "accountStatus": true,
+  "accountVerificationToken": "",
+  "createdAt": {
+    "$date": "2024-12-06T06:48:16.661Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T02:37:56.114Z"
+  },
+  "slug": "van-a-phan",
+  "__v": 0,
+  "passwordResetToken": ""
+},
+{
+  "_id": {
+    "$oid": "6752a5b7f7588b1a2464a5eb"
+  },
+  "firstName": "Văn B",
+  "lastName": "Phan",
+  "email": "bao214369@gmail.com",
+  "address": "Chưa cập nhật",
+  "phoneNumber": "0362214368",
+  "dateOfBirth": "00-00-0000",
+  "gender": "Không muốn trả lời",
+  "profileImage": "https://res.cloudinary.com/dckkixmx2/image/upload/v1733469622/tro-so-system/profileImages/kpthggjlq3cbgudhgqrj.png",
+  "contacts": [
+    {
+      "$oid": "6752ac9287804d45e8f6d41a"
+    }
+  ],
+  "password": "$2a$10$zhEKFF.v/hIWKDW/dcwqIuJEUsYOWlctSoaEiQYi3Uu9Chsxu1Km6",
+  "accountStatus": true,
+  "accountVerificationToken": "",
+  "createdAt": {
+    "$date": "2024-12-06T07:20:23.598Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T22:47:29.994Z"
+  },
+  "slug": "van-b-phan",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67565da87bd6e09b863d84ee"
+  },
+  "firstName": "Trọ 1",
+  "lastName": "Chủ ",
+  "email": "nhlpcb1212@gmail.com",
+  "address": "Chưa cập nhật",
+  "phoneNumber": "0362214365",
+  "dateOfBirth": "00-00-0000",
+  "gender": "Không muốn trả lời",
+  "profileImage": "https://res.cloudinary.com/dckkixmx2/image/upload/v1733713318/tro-so-system/profileImages/dgr0ozlstkuc8tpc8j8k.png",
+  "contacts": [],
+  "password": "$2a$10$6qD4Bvl0RII0HQsnwKAIAukIlv9QJGvwhkUyDEoLQrHuKXvkK3Q1e",
+  "accountStatus": true,
+  "accountVerificationToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5obHBjYjEyMTJAZ21haWwuY29tIiwiaWF0IjoxNzMzNzEzNjQxLCJleHAiOjE3MzM4MDAwNDF9.kNn10Xy5OTIBti_lTxuo5shpVj5rTgXTpEEESO4Jtvw",
+  "createdAt": {
+    "$date": "2024-12-09T03:02:00.312Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T03:07:21.864Z"
+  },
+  "slug": "tro-1-chu",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756618e7bd6e09b863d8506"
+  },
+  "firstName": "Trọ 2",
+  "lastName": "Chủ",
+  "email": "lnnh10903@gmail.com",
+  "address": "Chưa cập nhật",
+  "phoneNumber": "0362214363",
+  "dateOfBirth": "00-00-0000",
+  "gender": "Không muốn trả lời",
+  "profileImage": "https://res.cloudinary.com/dckkixmx2/image/upload/v1733714317/tro-so-system/profileImages/nvzerowejv5k6bhbhmya.jpg",
+  "contacts": [],
+  "password": "$2a$10$2o0ql1KLSG0iqfEcSylEsu3D3LSfVO9DaG3Fm/YHOiswvJtnjW4E.",
+  "accountStatus": true,
+  "accountVerificationToken": "",
+  "createdAt": {
+    "$date": "2024-12-09T03:18:38.613Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T03:21:57.564Z"
+  },
+  "slug": "tro-2-chu",
+  "__v": 0
+}]

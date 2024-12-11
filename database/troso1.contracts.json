@@ -1,0 +1,182 @@
+[{
+  "_id": {
+    "$oid": "6752b1ab87804d45e8f6d4d8"
+  },
+  "owner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "lodger": {
+    "$oid": "6752ac9287804d45e8f6d41a"
+  },
+  "room": {
+    "$oid": "6752b09a87804d45e8f6d45a"
+  },
+  "startDate": "2024-12-01",
+  "rentAmount": 3000000,
+  "contractTerm": 18,
+  "status": "Active",
+  "isHidden": true,
+  "createdAt": {
+    "$date": "2024-12-06T08:11:23.460Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-06T08:24:41.495Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6753ca39e1f227986f8e413b"
+  },
+  "owner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "lodger": {
+    "$oid": "6752ac9287804d45e8f6d41a"
+  },
+  "room": {
+    "$oid": "6752b09a87804d45e8f6d45a"
+  },
+  "startDate": "2024-12-01",
+  "rentAmount": 3000000,
+  "contractTerm": 1,
+  "status": "Active",
+  "isHidden": false,
+  "createdAt": {
+    "$date": "2024-12-07T04:08:25.515Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T04:09:54.778Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6754ef985f944b549dc44f13"
+  },
+  "owner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "lodger": {
+    "$oid": "6752ac9287804d45e8f6d41a"
+  },
+  "room": {
+    "$oid": "6752a0e5f7588b1a2464a563"
+  },
+  "startDate": "2024-12-01",
+  "rentAmount": 4000000,
+  "contractTerm": 12,
+  "status": "Active",
+  "isHidden": false,
+  "createdAt": {
+    "$date": "2024-12-08T01:00:08.948Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-08T01:00:55.592Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756ee5f0e27583d6aa34a55"
+  },
+  "owner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "lodger": {
+    "$oid": "6752ac9287804d45e8f6d41a"
+  },
+  "room": {
+    "$oid": "6752a3e1f7588b1a2464a5b2"
+  },
+  "startDate": "2024-12-01",
+  "rentAmount": 1150000,
+  "contractTerm": 3,
+  "status": "Pending",
+  "isHidden": false,
+  "createdAt": {
+    "$date": "2024-12-09T13:19:27.840Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T13:19:27.840Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6758fb4beecac185bec15935"
+  },
+  "owner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "lodger": {
+    "$oid": "6752ac9287804d45e8f6d41a"
+  },
+  "room": {
+    "$oid": "6752a4ddf7588b1a2464a5bf"
+  },
+  "startDate": "2024-12-01",
+  "rentAmount": 8000000,
+  "contractTerm": 14,
+  "status": "Active",
+  "isHidden": true,
+  "createdAt": {
+    "$date": "2024-12-11T02:39:07.349Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T02:43:17.530Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67590287eecac185bec15b17"
+  },
+  "owner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "lodger": {
+    "$oid": "6752ac9287804d45e8f6d41a"
+  },
+  "room": {
+    "$oid": "6752a4ddf7588b1a2464a5bf"
+  },
+  "startDate": "2024-12-01",
+  "rentAmount": 8000000,
+  "contractTerm": 14,
+  "status": "Active",
+  "isHidden": true,
+  "createdAt": {
+    "$date": "2024-12-11T03:09:59.342Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:20:19.500Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67590855eecac185bec15da0"
+  },
+  "owner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "lodger": {
+    "$oid": "6752ac9287804d45e8f6d41a"
+  },
+  "room": {
+    "$oid": "6752a4ddf7588b1a2464a5bf"
+  },
+  "startDate": "2024-12-01",
+  "rentAmount": 8000000,
+  "contractTerm": 4,
+  "status": "Active",
+  "isHidden": false,
+  "createdAt": {
+    "$date": "2024-12-11T03:34:45.001Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:36:18.702Z"
+  },
+  "__v": 0
+}]

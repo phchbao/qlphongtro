@@ -1,5 +1,5 @@
 # Trọ Số
-Trọ số là một hệ thống quản lý phòng tìm kiếm phòng trọ. Đây là một ứng dụng web cho phép bên thuê và cho thuê kết nối với nhau. Chủ sở hữu có thể đăng phòng cho thuê, quản lý người ở, đăng ký thanh toán tiền thuê và tạo hợp đồng thuê phòng. Người ở trọ có thể tìm kiếm và lọc phòng, xem chi tiết phòng, gửi email cho chủ phòng và sử dụng ứng dụng trò chuyện tích hợp để liên lạc giữa chủ phòng và người ở trọ.
+Trọ số là một hệ thống quản lý phòng tìm kiếm phòng trọ. Đây là một ứng dụng web cho phép người thuê và chủ trọ kết nối với nhau. Chủ sở hữu có thể đăng phòng cho thuê, quản lý người ở, đăng ký thanh toán tiền thuê và tạo hợp đồng thuê phòng. Người ở trọ có thể tìm kiếm và lọc phòng, xem chi tiết phòng, gửi email cho chủ phòng và sử dụng ứng dụng trò chuyện tích hợp để liên lạc giữa chủ phòng và người ở trọ.
 ## Tính năng
 - Đăng phòng cho thuê
 - Tìm kiếm và lọc phòng

@@ -37,7 +37,7 @@ const NavBarLinksOwner = ({ toggleMenu }) => {
       </Link>
 
       <Link to="/owner/rentDetail" onClick={toggleMenu} className="text-center">
-        <Tooltip title="CHI TIẾT THUÊ" arrow>
+        <Tooltip title="HÓA ĐƠN" arrow>
           <IconButton
             sx={{
               color: "black",

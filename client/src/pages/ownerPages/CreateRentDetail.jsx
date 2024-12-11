@@ -156,7 +156,7 @@ const CreateRentDetail = () => {
     <main className="flex flex-col md:flex-row">
       <div className="mt-10 flex flex-col items-center md:ml-16 md:items-start">
         <div className="mb-6">
-          <h3 className="font-heading font-bold">Tạo chi tiết thuê</h3>
+          <h3 className="font-heading font-bold">Tạo hóa đơn</h3>
         </div>
 
         <div className="">
@@ -283,7 +283,7 @@ const CreateRentDetail = () => {
 
         <div>
           <ConfirmModal open={open} handleModalClose={handleModalClose}>
-            <h3 className="text-center">Tạo chi tiết thuê</h3>
+            <h3 className="text-center">Tạo hóa đơn</h3>
             <p className="text-center my-4">
                 Bạn chắc chắn chứ? Việc tạo chi tiết cho thuê không thể hoàn tác và chỉ có thể tạo mới khi chấm dứt hợp đồng
             </p>

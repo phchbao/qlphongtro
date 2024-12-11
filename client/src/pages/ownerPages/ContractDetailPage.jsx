@@ -108,7 +108,7 @@ const ContractDetailPage = () => {
         <ConfirmModal open={open} handleModalClose={handleModalClose}>
           <h3 className="text-center">Chấm dứt hợp đồng</h3>
           <p className="text-center my-4">
-            Xác nhận hủy? Đảm bảo rằng bạn đã liên hệ với bên thuê trước để thảo luận về vấn đề này.
+            Xác nhận hủy? Đảm bảo rằng bạn đã liên hệ với người thuê trước để thảo luận về vấn đề này.
           </p>
           <div className="flex flex-wrap justify-center gap-8 mt-8">
             <Button onClick={handleModalClose} color="warning">

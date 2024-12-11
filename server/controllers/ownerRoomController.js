@@ -22,6 +22,51 @@ const postRoom = async (req, res) => {
   res.status(201).json({ room });
 };
 
+const importRooms = async (req, res) => {
+  try {
+    const roomsData = req.body; // Dữ liệu JSON từ frontend (array)
+    const userId = req.user.userId; // Lấy thông tin người dùng đang đăng nhập
+
+    if (!Array.isArray(roomsData)) {
+      return res.status(400).json({ success: false, message: "Dữ liệu không hợp lệ!" });
+    }
+
+    const importedRooms = await Promise.all(
+      roomsData.map(async (room) => {
+        const newRoom = {
+          title: room.title,
+          slug: undefined, // Để mongoose-slug-generator tự tạo
+          roomId: nanoid(7),
+          address: room.address,
+          description: room.description,
+          price: room.price,
+          area: room.area,
+          beds: room.beds,
+          amenities: room.amenities,
+          category: room.category,
+          roomImages: room.roomImages, // Sử dụng ảnh từ frontend gửi lên
+          roomOwner: userId,
+          status: room.status,
+        };
+
+        return Room.create(newRoom);
+      })
+    );
+
+    res.status(201).json({
+      success: true,
+      data: importedRooms,
+    });
+  } catch (error) {
+    console.error("Lỗi khi import dữ liệu:", error);
+    res.status(500).json({
+      success: false,
+      message: "Đã xảy ra lỗi khi import dữ liệu!",
+    });
+  }
+};
+
+
 /**
  * @description Get Owner's Real Estates
  * @returns {object} room
@@ -56,7 +101,7 @@ const getOwnerRooms = async (req, res) => {
 };
 
 const getAllOwnerRooms = async (req, res) => {
-  const { search, status } = req.query;
+  const { search, status, category, priceFilter, province, district } = req.query;
 
   // Khởi tạo đối tượng truy vấn
   const queryObject = {
@@ -79,6 +124,27 @@ const getAllOwnerRooms = async (req, res) => {
     queryObject.status = false; // Lọc theo trạng thái "phòng đang thuê"
   }
 
+  // Thêm điều kiện lọc theo category
+  if (category && category !== "all") {
+    queryObject.category = category;
+  }
+
+  // Thêm điều kiện lọc theo priceFilter
+  if (priceFilter) {
+    const [minPrice, maxPrice] = priceFilter.split("-");
+    queryObject.price = { $gte: Number(minPrice), $lte: Number(maxPrice) };
+  }
+
+  // Thêm điều kiện lọc theo tỉnh/thành phố
+  if (province) {
+    queryObject["address.province"] = province;
+  }
+
+  // Thêm điều kiện lọc theo quận/huyện
+  if (district) {
+    queryObject["address.district"] = district;
+  }
+
   try {
     let roomResult = Room.find(queryObject)
       .populate({
@@ -98,10 +164,7 @@ const getAllOwnerRooms = async (req, res) => {
     const allRoom = await roomResult;
 
     // Đếm tổng số phòng phù hợp
-    const totalRooms = await Room.countDocuments({
-      roomOwner: req.user.userId,
-      isHidden: false,
-    });
+    const totalRooms = await Room.countDocuments(queryObject);
     const numberOfPages = Math.ceil(totalRooms / limit);
 
     // Gửi kết quả phản hồi
@@ -111,7 +174,6 @@ const getAllOwnerRooms = async (req, res) => {
     res.status(500).json({ error: "Đã xảy ra lỗi khi lấy danh sách phòng" });
   }
 };
-
 
 /**
  * @description Get single room
@@ -226,40 +288,6 @@ const deleteRoom = async (req, res) => {
   res.json({ success: true, message: "Xóa phòng thành công" });
 };
 
-const getRoomStats = async (req, res) => {
-  try {
-    const ownerId = req.user.userId;
-
-    const stats = await Room.aggregate([
-      { $match: { roomOwner: ownerId } },
-      {
-        $group: {
-          _id: null,
-          hidden: { $sum: { $cond: ["$isHidden", 1, 0] } },
-          visible: { $sum: { $cond: [{ $eq: ["$isHidden", false] }, 1, 0] } },
-          available: {
-            $sum: {
-              $cond: [
-                { $and: [{ $eq: ["$isHidden", false] }, { $eq: ["$status", true] }] },
-                1,
-                0,
-              ],
-            },
-          },
-        },
-      },
-    ]);
-
-    const { hidden = 0, visible = 0, available = 0 } = stats[0] || {};
-
-    res.status(200).json({ hidden, visible, available });
-  } catch (error) {
-    console.error("Error fetching room stats:", error);
-    res.status(500).json({ msg: "Lỗi khi lấy thống kê phòng" });
-  }
-};
-
-
 export {
   postRoom,
   getOwnerRooms,
@@ -267,5 +295,5 @@ export {
   getSingleRoom,
   updateRoomDetails,
   deleteRoom,
-  getRoomStats,
+  importRooms,
 };

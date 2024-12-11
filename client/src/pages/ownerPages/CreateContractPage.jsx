@@ -7,7 +7,7 @@ import {
 } from "../../features/ownerUser/ownerUserSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { DatePicker, AlertToast, ConfirmModal } from "../../components";
-import { Button, CircularProgress, TextField, MenuItem } from "@mui/material";
+import { Button, CircularProgress, TextField, MenuItem, Autocomplete } from "@mui/material";
 import moment from "moment";
 import contractImage from "../../assets/images/createContract.svg";
 import BorderColorRoundedIcon from "@mui/icons-material/BorderColorRounded";
@@ -114,22 +114,26 @@ const CreateContractPage = () => {
         <div className="">
           <form id="form" onSubmit={handleConfirmation}>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-              <TextField
-                select
-                required
-                label="Bên đại diện thuê"
-                value={contractForm.lodger}
-                onChange={handleChange}
-                sx={{ width: "300px" }}
-                name="lodger"
-                color="tertiary"
-              >
-                {contacts?.map((user) => (
-                  <MenuItem key={user._id} value={user._id} className="">
-                    {user.email}
-                  </MenuItem>
-                ))}
-              </TextField>
+            <Autocomplete
+  options={contacts || []}
+  getOptionLabel={(option) => option.email || ""} 
+  value={contacts?.map((user) => user._id === contractForm.lodger ? user : null).find(Boolean) || null} // Dùng map và tìm giá trị hợp lệ
+  onChange={(event, newValue) => {
+    handleChange({
+      target: { name: "lodger", value: newValue ? newValue._id : "" },
+    });
+  }}
+  renderInput={(params) => (
+    <TextField
+      {...params}
+      required
+      label="Người thuê"
+      sx={{ width: "300px" }}
+      color="tertiary"
+    />
+  )}
+/>
+
               <DatePicker
                 label="Bắt đầu ngày"
                 value={date}
@@ -232,7 +236,7 @@ const CreateContractPage = () => {
           <ConfirmModal open={open} handleModalClose={handleModalClose}>
             <h3 className="text-center">Xác nhận tạo hợp đồng?</h3>
             <p className="text-center my-4">
-                Chắc chắn tạo hợp đồng? Một khi bạn đã tạo hợp đồng, bạn không thể chỉnh sửa mà chỉ có thể xóa nó. Hợp đồng sẽ được gửi cho bên thuê để xem xét
+                Chắc chắn tạo hợp đồng? Một khi bạn đã tạo hợp đồng, bạn không thể chỉnh sửa mà chỉ có thể xóa nó. Hợp đồng sẽ được gửi cho người thuê để xem xét
             </p>
             <div className="flex flex-wrap justify-center gap-8 mt-8">
               <Button onClick={handleModalClose} color="error">

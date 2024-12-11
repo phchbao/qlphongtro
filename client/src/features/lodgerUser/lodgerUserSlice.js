@@ -56,12 +56,12 @@ export const getAllContacts = createAsyncThunk(
     try {
       let url = "/lodger/contacts/all";
       if (name) {
-        url = url + `?name=${name}`;
+        url = `${url}?name=${encodeURIComponent(name)}`; // Mã hóa chuỗi truy vấn để tránh lỗi
       }
       const { data } = await axiosFetch.get(url);
-      return await data;
+      return data; // Không cần await ở đây
     } catch (error) {
-      return thunkAPI.rejectWithValue(error.response.data.msg);
+      return thunkAPI.rejectWithValue(error.response?.data?.msg || "Lỗi không xác định");
     }
   }
 );
@@ -191,12 +191,8 @@ const lodgerUserSlice = createSlice({
         state.alertMsg = action.payload;
         state.alertType = "error";
       })
-      .addCase(getAllContacts.pending, (state) => {
-        state.isLoading = true;
-        state.success = null;
-      })
       .addCase(getAllContacts.fulfilled, (state, action) => {
-        state.contacts = action.payload.contacts;
+        state.contacts = action.payload.contacts || [];
         state.isLoading = false;
         state.alertFlag = false;
       })

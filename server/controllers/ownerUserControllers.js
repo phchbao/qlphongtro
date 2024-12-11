@@ -128,7 +128,7 @@ const addContactToggle = async (req, res) => {
  */
 const getAllContacts = async (req, res) => {
   const { userId } = req.user;
-  const { name } = req.query;
+  const { name, email } = req.query; // Lấy thêm email từ query
 
   // Get the current owner user's contact list
   const currentOwnerUser = await OwnerUser.findById(userId).populate({
@@ -140,20 +140,46 @@ const getAllContacts = async (req, res) => {
   if (!currentOwnerUser) throw new NotFoundError("User not found");
 
   let contacts = currentOwnerUser.contacts; // Get the current owner user's contact list
-  // Filter the contact list by name if a name is provided in the query
-  if (name) {
+
+  // Filter the contact list by name or email if provided in the query
+  if (name || email) {
     contacts = contacts.filter((contact) => {
-      return (
-        contact.firstName.toLowerCase().includes(name.toLowerCase()) ||
-        contact.lastName.toLowerCase().includes(name.toLowerCase())
-      );
+      const matchName =
+        name &&
+        (contact.firstName.toLowerCase().includes(name.toLowerCase()) ||
+          contact.lastName.toLowerCase().includes(name.toLowerCase()));
+
+      const matchEmail =
+        email && contact.email.toLowerCase().includes(email.toLowerCase());
+
+      return matchName || matchEmail; // Chỉ cần khớp 1 trong 2 điều kiện
     });
   }
 
-  // reverse the contact list so that the most recent contact is at the top
+  // Reverse the contact list so that the most recent contact is at the top
   contacts = contacts.reverse();
 
   res.json({ contacts });
+};
+
+const getAllContactIds = async (req, res) => {
+  const { userId } = req.user;
+
+  // Tìm chủ nhà và chỉ lấy danh sách liên hệ
+  const currentOwnerUser = await OwnerUser.findById(userId).populate({
+    path: "contacts",
+    select: "_id", // Chỉ chọn trường _id
+  });
+
+  if (!currentOwnerUser) throw new NotFoundError("User not found");
+
+  // Trích xuất danh sách ID từ mảng contacts
+  const contactIds = currentOwnerUser.contacts.map((contact) =>
+    contact._id.toString()
+  );
+
+  // Trả về danh sách ID
+  res.json({ contactIds });
 };
 
 export {
@@ -162,4 +188,5 @@ export {
   updateProfile,
   addContactToggle,
   getAllContacts,
+  getAllContactIds,
 };

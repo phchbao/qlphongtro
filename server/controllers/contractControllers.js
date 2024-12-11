@@ -54,7 +54,7 @@ const createContract = async (req, res) => {
   const subject = `Hợp đồng cho thuê phòng ${roomUser.title}`;
   const body = `
     <p> Xin chào ${lodgerUser.lastName} ${lodgerUser.firstName},</p> 
-    <p> Tôi là ${ownerUser.lastName} ${ownerUser.firstName}, đại diện bên cho thuê</p> 
+    <p> Tôi là ${ownerUser.lastName} ${ownerUser.firstName}, chủ trọ</p> 
     <p>Tôi viết mail này để thông báo cho bạn biết là tôi đã soạn hợp đồng thuê trọ phòng <strong>${roomUser.title}</strong>.</p>
     <p>Truy cập liên kết bên dưới để xem bản hợp đồng. Vui lòng đọc kĩ các điều khoản trước khi xác nhận hợp đồng.</p>
     <a href="${process.env.CLIENT_URL}/#/lodger/contract-agreement/${contract._id}"><strong>Xem hợp đồng</strong></a><br>
@@ -140,7 +140,7 @@ const approveContract = async (req, res) => {
   const subject = `Hợp đồng ${contractDetail.room.title} đã được xác nhận`;
   const body = `
     <p> Xin chào ${contractDetail.owner.lastName}  ${contractDetail.owner.firstName},</p>
-    <p> Tôi là ${contractDetail.lodger.lastName} ${contractDetail.lodger.firstName}, đại diện bên thuê </p>
+    <p> Tôi là ${contractDetail.lodger.lastName} ${contractDetail.lodger.firstName}, đại diện người thuê </p>
     <p> Tôi đã xem qua hợp đồng của bạn. Sau khi đọc kĩ các điều khoản, tôi xác nhận hợp đồng.</p>
     <p>Cảm ơn bạn đã tư vấn nhiệt tình.</p>
     <p>Mong bạn vẫn sẽ tiếp tục hỗ trợ tôi trong khoảng thời gian tôi ở trọ.</p>
@@ -252,7 +252,7 @@ const deleteContract = async (req, res) => {
   const subject = `Chấm dứt hợp đồng phòng ${room.title}`;
   const body = `
     <p>Xin chào ${lodgerUser.lastName} ${lodgerUser.firstName},</p>  
-    <p> Tôi là ${ownerUser.lastName} ${ownerUser.firstName}, đại diện bên cho thuê </p>
+    <p> Tôi là ${ownerUser.lastName} ${ownerUser.firstName}, chủ trọ</p>
     <p>Tôi viết cho bạn thư này để thông báo về việc chấm dứt hợp đồng phòng <strong>${room.title}</strong>.</p>
     <p>Hợp đồng sẽ được chấm dứt thành công cùng với chi tiết tiền thuê và lịch sử thanh toán liên quan.</p>
     <p>Xin lưu ý rằng bạn phải rời khỏi phòng trong vòng 7 ngày. Chúng tôi sẽ tiến hành kiểm tra phòng lần cuối để đảm bảo rằng nó ở trong tình trạng giống như khi bạn chuyển đến, với mức độ hao mòn chấp nhận được. Bất kỳ thiệt hại hay thay đổi vượt quá mức hợp đồng bạn sẽ phải bồi thường dựa trên chi phí sửa chữa thực tế.</p>

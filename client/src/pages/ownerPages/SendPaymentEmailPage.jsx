@@ -77,7 +77,7 @@ const SendPaymentEmailPage = () => {
       <p>
       Xin chào  ${rentDetail?.lodger?.lastName} ${rentDetail?.lodger?.firstName},</p>
               
-              <p>Tôi là ${rentDetail?.owner?.lastName} ${rentDetail?.owner?.firstName}, đại diện bên cho thuê</p>
+              <p>Tôi là ${rentDetail?.owner?.lastName} ${rentDetail?.owner?.firstName}, chủ trọ</p>
               <p>Tôi viết mail này để thông báo khoản thanh toán đến hạn. Dưới đây là danh sách các khoản chi phí </p>
               <p>Tiền thuê tháng này: ${format(rentDetail?.room?.price)}.VND</p>
               <p>Tiền điện: ${format(calculateTotalRent(rentDetail?.electricPrice,rentDetail?.electric))}.VND</p>
@@ -110,7 +110,7 @@ const SendPaymentEmailPage = () => {
     const currentYear = currentDate.getFullYear();  
     axiosFetch
       .post("/noti/owner/send-message", {
-        to: room?.roomOwner?._id,
+        to: rentDetail?.lodger?._id,
         message: `Tiền trọ tháng ${currentMonth}/${currentYear} đến hạn. Vui lòng kiểm tra.`,
       })
       .then((response) => {
@@ -123,7 +123,7 @@ const SendPaymentEmailPage = () => {
 
   if (isLoading) return <PageLoading />;
   if (!rentDetail)
-    return <h1 className="mt-6 text-center">Không tìm thấy chi tiết thuê</h1>;
+    return <h1 className="mt-6 text-center">Không tìm thấy hóa đơn</h1>;
 
   return (
     <main className="mt-10 mb-12 mx-8 md:mx-12">

@@ -53,7 +53,7 @@ const Landing = () => {
     <a href="#/blog" className="text-gray-700 text-sm md:text-base mr-4 font-bold text-yellow">
       Blog
     </a>
-    <a href="https://www.facebook.com/" target="_blank">
+    <a href="https://www.facebook.com/61570515562039" target="_blank">
     <img className="hidden md:block " src={facebook} height="30" width="30" alt="" />
     </a>
     <a href="https://chat.zalo.me/" target="_blank">
@@ -130,7 +130,7 @@ const Landing = () => {
         <div className="md:w-2/4">
           <p><h1 className="text-2xl md:text-4xl font-heading text-center font-extrabold">Hướng dẫn sử dụng website</h1></p>
           <div style={{ height: '35px' }}></div> 
-        <iframe width="672" height="378" src="https://www.youtube.com/embed/VUBEwY5vgq4?si=Xd2wIdoLtQEhe7ek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="672" height="378" src="https://youtu.be/7qgoFudPFLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <main className="" ref={ref}>
           <section className="flex gap-16">
@@ -194,7 +194,7 @@ const Landing = () => {
               <p className="">
                 Tìm kiếm các thể loại phòng hiện có
               </p>
-              <p className="">Liên hệ với bên cho thuê</p>
+              <p className="">Liên hệ với chủ trọ</p>
               <p className="">Hoàn tất thủ tục cho thuê và theo dõi chi phí</p>
               <div className="flex justify-start mt-7">
                 <Button

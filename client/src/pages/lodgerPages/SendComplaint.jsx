@@ -120,7 +120,7 @@ const SendComplaint = () => {
   return (
     <main className="mt-10 mb-12 mx-8 md:mx-12">
       <div className="flex gap-2 mb-4">
-        <h4 className="font-heading font-bold">Gửi góp ý cho bên thuê</h4>
+        <h4 className="font-heading font-bold">Gửi góp ý cho chủ trọ</h4>
         <ForwardToInboxRoundedIcon color="tertiary" />
       </div>
       <div className="shadow-lg rounded-md p-8 overflow-auto">

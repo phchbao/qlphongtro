@@ -1,0 +1,165 @@
+[{
+  "_id": {
+    "$oid": "6752b2bc87804d45e8f6d508"
+  },
+  "owner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "lodger": {
+    "$oid": "6752ac9287804d45e8f6d41a"
+  },
+  "room": {
+    "$oid": "6752b09a87804d45e8f6d45a"
+  },
+  "contractTerm": 18,
+  "startDate": "2024-12-01",
+  "currentRentDate": {
+    "from": "01-06-2026",
+    "to": "2027-06-30"
+  },
+  "electric": 40,
+  "water": 4,
+  "service": 100000,
+  "electricPrice": 2000,
+  "waterPrice": 12000,
+  "isHidden": true,
+  "createdAt": {
+    "$date": "2024-12-06T08:15:56.710Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-06T08:24:41.513Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6753cb8ee1f227986f8e4178"
+  },
+  "owner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "lodger": {
+    "$oid": "6752ac9287804d45e8f6d41a"
+  },
+  "room": {
+    "$oid": "6752b09a87804d45e8f6d45a"
+  },
+  "contractTerm": 1,
+  "startDate": "2024-12-01",
+  "currentRentDate": {
+    "from": "01-01-2025",
+    "to": "2025-01-31"
+  },
+  "electric": 40,
+  "water": 4,
+  "service": 50000,
+  "electricPrice": 10000,
+  "waterPrice": 12000,
+  "isHidden": false,
+  "createdAt": {
+    "$date": "2024-12-07T04:14:06.198Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:41:44.039Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6754eff65f944b549dc44f3d"
+  },
+  "owner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "lodger": {
+    "$oid": "6752ac9287804d45e8f6d41a"
+  },
+  "room": {
+    "$oid": "6752a0e5f7588b1a2464a563"
+  },
+  "contractTerm": 12,
+  "startDate": "2024-12-01",
+  "currentRentDate": {
+    "from": "01-12-2025",
+    "to": "2025-12-31"
+  },
+  "electric": 40,
+  "water": 4,
+  "service": 50000,
+  "electricPrice": 10000,
+  "waterPrice": 12000,
+  "isHidden": false,
+  "createdAt": {
+    "$date": "2024-12-08T01:01:42.473Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:41:44.039Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6759031aeecac185bec15b44"
+  },
+  "owner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "lodger": {
+    "$oid": "6752ac9287804d45e8f6d41a"
+  },
+  "room": {
+    "$oid": "6752a4ddf7588b1a2464a5bf"
+  },
+  "contractTerm": 14,
+  "startDate": "2024-12-01",
+  "currentRentDate": {
+    "from": "2024-12-01",
+    "to": "2026-01-31"
+  },
+  "electric": 40,
+  "water": 4,
+  "service": 100000,
+  "electricPrice": 2000,
+  "waterPrice": 25000,
+  "isHidden": true,
+  "createdAt": {
+    "$date": "2024-12-11T03:12:26.525Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:21:46.317Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675908fdeecac185bec15dd3"
+  },
+  "owner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "lodger": {
+    "$oid": "6752ac9287804d45e8f6d41a"
+  },
+  "room": {
+    "$oid": "6752a4ddf7588b1a2464a5bf"
+  },
+  "contractTerm": 4,
+  "startDate": "2024-12-01",
+  "currentRentDate": {
+    "from": "01-04-2025",
+    "to": "2025-04-30"
+  },
+  "electric": 40,
+  "water": 4,
+  "service": 50000,
+  "electricPrice": 2000,
+  "waterPrice": 25000,
+  "isHidden": false,
+  "createdAt": {
+    "$date": "2024-12-11T03:37:33.909Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:42:09.741Z"
+  },
+  "__v": 0
+}]

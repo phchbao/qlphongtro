@@ -15,19 +15,19 @@ const AllContacts = () => {
   const dispatch = useDispatch();
   const { contacts, isLoading } = useSelector((state) => state.ownerUser);
 
-  const [name, setName] = useState("");
+  const [search, setSearch] = useState(""); // Một state duy nhất cho cả tên và email
 
   useEffect(() => {
-    dispatch(getAllContacts({ name: "" }));
+    dispatch(getAllContacts({ name: "", email: "" })); // Mặc định không lọc
   }, [dispatch]);
 
   const handleSearchChange = (e) => {
-    setName(e.target.value);
+    setSearch(e.target.value); // Cập nhật giá trị nhập vào
   };
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    dispatch(getAllContacts({ name }));
+    dispatch(getAllContacts({ name: search, email: search })); // Gửi cả `name` và `email` bằng cùng giá trị
   };
 
   return (
@@ -46,8 +46,8 @@ const AllContacts = () => {
                 name="search"
                 type="text"
                 size="small"
-                placeholder="Nhập tên người dùng..."
-                value={name}
+                placeholder="Nhập tên hoặc email..."
+                value={search}
                 onChange={handleSearchChange}
                 endAdornment={
                   <InputAdornment position="end">
@@ -60,6 +60,8 @@ const AllContacts = () => {
             </FormControl>
           </form>
         </div>
+
+        {/* Danh sách liên hệ */}
         <div className="flex flex-wrap justify-center gap-8 mx-4 md:justify-start md:mx-0">
           {isLoading ? (
             <div className="flex justify-center mt-12 h-96">

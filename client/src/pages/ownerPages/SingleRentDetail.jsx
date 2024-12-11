@@ -29,6 +29,8 @@ import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
 import HistoryIcon from "@mui/icons-material/History";
+import logo from "../../assets/images/logo.png";
+import { jsPDF } from "jspdf";
 
 const SingleRentDetail = () => {
   const dispatch = useDispatch();
@@ -70,14 +72,61 @@ const SingleRentDetail = () => {
     ref.current.scrollIntoView({ behavior: "smooth" }); // scroll to payment history component on click smoothly
   };
 
+  const handlePrintInvoice = () => {
+    const doc = new jsPDF();
+
+    // Logo
+    doc.addImage(logo, "PNG", 10, 10, 50, 30);
+
+    // Tiêu đề
+    doc.setFontSize(16);
+    doc.text("HOA DON THANH TOAN", 70, 20);
+
+    // Thông tin phòng và người thuê
+    doc.setFontSize(12);
+    doc.text(`Phong:..............................`, 10, 50);
+    doc.text(`Lien he: ${rentDetail?.owner?.phoneNumber}`, 10, 60);
+    doc.text(`Email: ${rentDetail?.owner?.email}`, 10, 70);
+    doc.text("_______________________________________________________________________________",10,80)
+
+    // Ngày lập hóa đơn
+    const today = moment().format("DD-MM-YYYY");
+    doc.text(`Ngay lap hoa don: ${today}`, 10, 90);
+
+    // Thông tin thanh toán
+    doc.text(`Tien thue mot thang: ${format(rentDetail?.room?.price)}.VND`, 10, 100);
+    doc.text(`Tien dien: ${format(calculateTotalRent(rentDetail?.electricPrice,rentDetail?.electric))}.VND cho ${format(rentDetail?.electric)} kWh`, 10, 110);
+    doc.text(`Tien nuoc: ${format(calculateTotalRent(rentDetail?.waterPrice,rentDetail?.water))}.VND cho ${format(rentDetail?.water)} m3`, 10, 120);
+    doc.text(`Phi dich vu: ${format(rentDetail?.service)}.VND`, 10, 130);
+    doc.text(`Tong cong: ${format(
+        rentDetail?.room?.price +
+          calculateTotalRent(rentDetail?.electricPrice, rentDetail?.electric) +
+          calculateTotalRent(rentDetail?.waterPrice, rentDetail?.water) +
+          rentDetail?.service
+      )}.VND`,
+      10,
+      140
+    );
+    doc.text("Phi bo sung:............................",10,150)
+    // Chữ ký
+    doc.text("_______________________________________________________________________________",10,160)
+    doc.text("Chu ky nguoi nhan", 10, 170);
+    doc.text("(Ky va ghi ro ho ten)", 10, 180);
+    doc.text("Chu ky nguoi dong", 150, 170);
+    doc.text("(Ky va ghi ro ho ten)", 150, 180);
+
+    // Lưu file PDF
+    doc.save(`HoaDon_${rentDetail?.lodger?.email}_${today}.pdf`);
+  };
+
   if (isLoading) return <PageLoading />;
   if (!rentDetail)
-    return <h1 className="mt-6 text-center">Không tìm thấy chi tiết thuê</h1>;
+    return <h1 className="mt-6 text-center">Không tìm thấy hóa đơn</h1>;
 
   return (
     <>
       <main className="mb-12 mt-10 mx-4 md:mx-12">
-        <h3 className="mb-4 font-heading font-bold">Chi tiết thuê</h3>
+        <h3 className="mb-4 font-heading font-bold">Hóa đơn</h3>
         <section className="flex flex-col gap-12 rounded-md md:flex-row">
           <div className="w-full md:w-2/3">
             <ImageCarousal
@@ -140,11 +189,11 @@ const SingleRentDetail = () => {
                 <span className="font-medium">Trạng thái thanh toán</span>{" "}
                 {isRentPaid === true ? (
                   <>
-                    <DoneRoundedIcon color="success" /> Paid
+                    <DoneRoundedIcon color="success" /> Đã thanh toán
                   </>
                 ) : (
                   <>
-                    <CloseRoundedIcon color="error" /> Not Paid
+                    <CloseRoundedIcon color="error" /> Chưa thanh toán
                   </>
                 )}
               </p>
@@ -226,6 +275,17 @@ const SingleRentDetail = () => {
               </div>
             </CardActionArea>
           </Link>
+        </div>
+        <div className="mt-6">
+          <Button
+            onClick={handlePrintInvoice}
+            variant="contained"
+            color="success"
+            size="small"
+            sx={{ color: "#fff" }}
+          >
+            In hóa đơn
+          </Button>
         </div>
         <div ref={ref}>
           {showPaymentHistory && (

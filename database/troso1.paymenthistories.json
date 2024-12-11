@@ -1,0 +1,88 @@
+[{
+  "_id": {
+    "$oid": "6752b47d87804d45e8f6d5a4"
+  },
+  "rentDetail": {
+    "$oid": "6752b2bc87804d45e8f6d508"
+  },
+  "currentRentDate": {
+    "from": "2024-12-01",
+    "to": "2026-05-31"
+  },
+  "amountPaid": 3128000,
+  "paymentMethod": "Trực tiếp",
+  "isHidden": true,
+  "createdAt": {
+    "$date": "2024-12-06T08:23:25.543Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-06T08:24:41.517Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6753cf88e1f227986f8e420f"
+  },
+  "rentDetail": {
+    "$oid": "6753cb8ee1f227986f8e4178"
+  },
+  "currentRentDate": {
+    "from": "2024-12-01",
+    "to": "2024-12-31"
+  },
+  "amountPaid": 3128000,
+  "paymentMethod": "Trực tiếp",
+  "isHidden": false,
+  "createdAt": {
+    "$date": "2024-12-07T04:31:04.341Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T04:31:04.341Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675804188b01e57871e6a917"
+  },
+  "rentDetail": {
+    "$oid": "6754eff65f944b549dc44f3d"
+  },
+  "currentRentDate": {
+    "from": "2024-12-01",
+    "to": "2025-11-30"
+  },
+  "amountPaid": 4228000,
+  "paymentMethod": "Trực tiếp",
+  "isHidden": false,
+  "createdAt": {
+    "$date": "2024-12-10T09:04:24.122Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-10T09:04:24.122Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67590a11eecac185bec15ecb"
+  },
+  "rentDetail": {
+    "$oid": "675908fdeecac185bec15dd3"
+  },
+  "currentRentDate": {
+    "from": "2024-12-01",
+    "to": "2025-03-31"
+  },
+  "amountPaid": 8230000,
+  "paymentMethod": "Trực tiếp",
+  "isHidden": false,
+  "createdAt": {
+    "$date": "2024-12-11T03:42:09.735Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:42:09.735Z"
+  },
+  "__v": 0
+}]

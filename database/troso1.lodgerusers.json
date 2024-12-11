@@ -1,0 +1,119 @@
+[{
+  "_id": {
+    "$oid": "6752ac9287804d45e8f6d41a"
+  },
+  "firstName": "Văn B",
+  "lastName": "Nguyễn ",
+  "email": "bao214369@gmail.com",
+  "address": "Chưa cập nhật",
+  "phoneNumber": "0362214367",
+  "dateOfBirth": "00-00-0000",
+  "gender": "Không muốn trả lời",
+  "profileImage": "https://res.cloudinary.com/dckkixmx2/image/upload/v1733471378/tro-so-system/profileImages/jvh5gmpbvwy2hrkusyou.png",
+  "contacts": [
+    {
+      "$oid": "6752a5b7f7588b1a2464a5eb"
+    },
+    {
+      "$oid": "67529e30f7588b1a2464a52b"
+    }
+  ],
+  "password": "$2a$10$gzym6vsuKY12b4/m/8CkhenBppL3DLDrwl5XxorOd9GtgbHrePZKe",
+  "savedRooms": [
+    {
+      "$oid": "6752ac3c87804d45e8f6d40d"
+    }
+  ],
+  "accountStatus": true,
+  "accountVerificationToken": "",
+  "createdAt": {
+    "$date": "2024-12-06T07:49:38.973Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:44:16.426Z"
+  },
+  "slug": "van-b-nguyen",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752ad7a87804d45e8f6d434"
+  },
+  "firstName": "Văn A",
+  "lastName": "Nguyễn",
+  "email": "hiryuum3t4@gmail.com",
+  "address": "Chưa cập nhật",
+  "phoneNumber": "0362214366",
+  "dateOfBirth": "00-00-0000",
+  "gender": "Không muốn trả lời",
+  "profileImage": "https://res.cloudinary.com/dckkixmx2/image/upload/v1733471610/tro-so-system/profileImages/uddvnrncdrhqxoxxsttj.png",
+  "contacts": [],
+  "password": "$2a$10$mbh7nHPdz7M0FqOq2keMK.qvRO0RV9b5.WTThXcW9gmoZmFcJejja",
+  "savedRooms": [],
+  "accountStatus": true,
+  "accountVerificationToken": "",
+  "createdAt": {
+    "$date": "2024-12-06T07:53:30.698Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-06T07:53:48.661Z"
+  },
+  "slug": "van-a-nguyen",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67565e397bd6e09b863d84f3"
+  },
+  "firstName": "Thuê 1",
+  "lastName": "Người ",
+  "email": "nhlpcb1212@gmail.com",
+  "address": "Chưa cập nhật",
+  "phoneNumber": "0362214364",
+  "dateOfBirth": "00-00-0000",
+  "gender": "Không muốn trả lời",
+  "profileImage": "https://res.cloudinary.com/dckkixmx2/image/upload/v1733713464/tro-so-system/profileImages/cciuf1o1cbid1wvvvgyf.jpg",
+  "contacts": [],
+  "password": "$2a$10$bqlIAH37Ren83bgb2tFWAelqcXncPhxV2bnVRFFzgmUQ7edbrhT02",
+  "savedRooms": [],
+  "accountStatus": true,
+  "accountVerificationToken": "",
+  "createdAt": {
+    "$date": "2024-12-09T03:04:25.921Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T03:04:48.302Z"
+  },
+  "slug": "thue-1-nguoi",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67565f9e7bd6e09b863d84fc"
+  },
+  "firstName": "Thuê 2",
+  "lastName": "Người",
+  "email": "lnnh10903@gmail.com",
+  "address": "Chưa cập nhật",
+  "phoneNumber": "0362214362",
+  "dateOfBirth": "00-00-0000",
+  "gender": "Không muốn trả lời",
+  "profileImage": "https://res.cloudinary.com/dckkixmx2/image/upload/v1733713820/tro-so-system/profileImages/pcyrblwjh88te5koewa6.jpg",
+  "contacts": [
+    {
+      "$oid": "67529e30f7588b1a2464a52b"
+    }
+  ],
+  "password": "$2a$10$LlGnSYykmIXcety/QU/fxujBNN1sw2JD3p9z1EyrUoLNg2lx2gRC6",
+  "savedRooms": [],
+  "accountStatus": true,
+  "accountVerificationToken": "",
+  "createdAt": {
+    "$date": "2024-12-09T03:10:22.077Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-10T14:16:35.051Z"
+  },
+  "slug": "thue-2-nguoi",
+  "__v": 0
+}]

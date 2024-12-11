@@ -40,7 +40,7 @@ import LodgerChat from "./lodgerPages/LodgerChat";
 import OwnerNoti from "./ownerPages/OwnerNoti";
 import LodgerNoti from "./lodgerPages/LodgerNoti";
 import ManagementPage from "./ownerPages/ManagementPage";
-import ManagementRoom from "./ownerPages/ManagementRoom";
+import NotiAll from "./ownerPages/NotiAll";
 import ManagementElectric from "./ownerPages/ManagementElectric";
 import ManagementWater from "./ownerPages/ManagementWater";
 import ManagementService from "./ownerPages/ManagementService";
@@ -88,7 +88,7 @@ export {
   OwnerNoti,
   LodgerNoti,
   ManagementPage,
-  ManagementRoom,
+  NotiAll,
   ManagementElectric,
   ManagementWater,
   ManagementService,

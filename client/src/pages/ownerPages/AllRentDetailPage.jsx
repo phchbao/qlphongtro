@@ -23,14 +23,14 @@ const AllRentDetailPage = () => {
   if (allRentDetails?.length === 0)
     return (
       <div className="flex flex-col items-center h-screen mt-12 gap-4">
-        <h1 className="text-center">Chưa có chi tiết thuê nào được tạo</h1>
+        <h1 className="text-center">Chưa có hóa đơn nào được tạo</h1>
         <Button
           variant="contained"
           onClick={() => navigate("/owner/rentDetail/create")}
           sx={{ color: "#fff" }}
           startIcon={<AddCircleOutlineIcon />}
         >
-          Tạo chi tiết thuê
+          Tạo hóa đơn
         </Button>
       </div>
     );
@@ -46,11 +46,11 @@ const AllRentDetailPage = () => {
             size="small"
             startIcon={<AddCircleOutlineIcon />}
           >
-            Tạo chi tiết thuê
+            Tạo hóa đơn
           </Button>
         </div>
         <h3 className="my-4 font-heading font-bold text-center">
-          Chi tiết thuê
+          Hóa đơn
         </h3>
         <div className="flex flex-wrap gap-8 justify-center mx-4 md:justify-start md:mx-0">
           {allRentDetails?.map((rentDetail) => (

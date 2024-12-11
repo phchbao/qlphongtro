@@ -121,7 +121,7 @@ const ChatMessages = ({ chat, currentUser, socket, fromLodger }) => {
       <div className="overflow-auto">
         {messages.length === 0 ? (
           <div className="flex justify-center items-center h-64 w-full">
-            <p>No messages yet</p>
+            <p>Chưa có tin nhắn mới</p>
           </div>
         ) : (
           messages.map((message, index) => (

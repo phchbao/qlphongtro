@@ -21,7 +21,7 @@ const AboutPageComponent = () => {
               <p>
               Bên cho thuê có nhiều chức năng khác nhau như đăng bài
                 và quản lý phòng của mình, tạo hợp đồng cho thuê và cập nhật 
-                chi tiết thuê, quản lý người ở trọ, đăng ký thanh toán tiền thuê nhà, và
+                hóa đơn, quản lý người ở trọ, đăng ký thanh toán tiền thuê nhà, và
                 xem lịch sử thanh toán tiền thuê. Ngoài ra, bạn có thể gửi
                 thông báo thanh toán cho người thuê để đảm bảo thanh toán kịp thời.
               </p>
@@ -43,7 +43,7 @@ const AboutPageComponent = () => {
                 bên cho thuê để được tư vấn thuê phòng. Bạn có thể lưu phòng
                 để xem sau và xem chi tiết các phòng mà mình quan tâm. Khi
                 đồng ý thuê phòng, bạn có thể xem và ký vào hợp đồng thuê
-                hợp đồng được bên thuê gửi. Bạn cũng có thể xem
+                hợp đồng được chủ trọ gửi. Bạn cũng có thể xem
                 chi tiết thanh toán, ngày đến hạn, lịch sử thanh toán và nhận
                 nhắc nhở thanh toán từ chủ sở hữu.
               </p>

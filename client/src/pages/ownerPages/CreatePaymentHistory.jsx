@@ -99,7 +99,8 @@ const CreatePaymentHistory = () => {
       ) +calculateTotalRent(
         rentDetail?.water,
         rentDetail?.waterPrice
-      ),
+      )
+      + rentDetail?.service,
       currentRentDate: {
         from: rentDetail?.currentRentDate?.from,
         to: rentDetail?.currentRentDate?.to,
@@ -120,7 +121,7 @@ const CreatePaymentHistory = () => {
 
   if (isLoading) return <PageLoading />;
   if (!rentDetail)
-    return <h1 className="mt-6 text-center">Không tìm thấy chi tiết thuê</h1>;
+    return <h1 className="mt-6 text-center">Không tìm thấy hóa đơn</h1>;
 
   return (
     <main className="flex mt-14 flex-row justify-center">
@@ -174,12 +175,7 @@ const CreatePaymentHistory = () => {
               </div>
               <div className="flex mb-3 gap-4">
                 <h5 className="text-gray-700">
-                  Phí dịch vụ: {format(
-                    calculateTotalRent(
-                      rentDetail?.contractTerm,
-                      rentDetail?.service
-                    )
-                  )}.VND
+                  Phí dịch vụ: {format(rentDetail?.service)}.VND
                 </h5>
               </div>
               

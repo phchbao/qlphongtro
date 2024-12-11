@@ -45,7 +45,7 @@ const ManagementElectric = () => {
 
   return (
     <main className="flex flex-col items-center mt-10">
-      <h3 className="font-heading font-bold mb-6">Quản lý giá điện</h3>
+      <h3 className="font-heading font-bold mb-6">Nhập giá điện</h3>
       <form onSubmit={handleSubmit} className="flex flex-col items-center">
         <TextField
           label="Giá điện mới (VNĐ/kWh)"

@@ -14,7 +14,13 @@ const Homepage = () => {
   const initialQuery = {
     page: 1,
     search: "",
-    status: "",
+    status:"",
+    category: "all",
+    lowerLimit: "",
+    upperLimit: "",
+    priceFilter: "",
+    province: "",
+    district: "",
   };
 
   const [query, setQuery] = useState(initialQuery);
@@ -22,6 +28,12 @@ const Homepage = () => {
   useEffect(() => {
     dispatch(getAllOwnerRoom({ ...query }));
   }, [query.page]);
+
+  useEffect(() => {
+    if (query.lowerLimit && query.upperLimit) {
+      query.priceFilter = query.lowerLimit + "-" + query.upperLimit;
+    }
+  }, [query.lowerLimit, query.upperLimit]);
 
   const handlePageChange = useCallback(
     (event, value) => {

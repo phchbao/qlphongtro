@@ -5,8 +5,7 @@ const ManagementPage = () => {
   const navigate = useNavigate();
 
   const menuItems = [
-    { label: "Phòng", path: "rooms" },
-    { label: "Liên hệ", path: "contacts" },
+    { label: "Thông báo chung", path: "notiall" },
     { label: "Điện", path: "electric" },
     { label: "Nước", path: "water" },
     { label: "Dịch vụ", path: "services" },

@@ -45,7 +45,7 @@ const ManagementWater = () => {
 
   return (
     <main className="flex flex-col items-center mt-10">
-      <h3 className="font-heading font-bold mb-6">Quản lý giá nước</h3>
+      <h3 className="font-heading font-bold mb-6">Nhập giá nước</h3>
       <form onSubmit={handleSubmit} className="flex flex-col items-center">
         <TextField
           label="Giá nước mới (VNĐ/m³)"

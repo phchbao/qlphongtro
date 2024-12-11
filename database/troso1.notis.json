@@ -1,0 +1,414 @@
+[{
+  "_id": {
+    "$oid": "6752b11287804d45e8f6d49e"
+  },
+  "notiUsers": [
+    "6752ac9287804d45e8f6d41a",
+    "67529e30f7588b1a2464a52b"
+  ],
+  "message": "Tôi đang quan tâm đến phòng có có mã  ZHC1GiO của bạn: http://localhost:3000/#/owner/tro-so/du-an-opal-skyline",
+  "sender": "6752ac9287804d45e8f6d41a",
+  "createdAt": {
+    "$date": "2024-12-06T08:08:50.621Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-06T08:08:50.621Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6754d56d37e69373e523a7dc"
+  },
+  "notiUsers": [
+    "6752ac9287804d45e8f6d41a",
+    "6752a5b7f7588b1a2464a5eb"
+  ],
+  "message": "Tôi đang quan tâm đến phòng có có mã  ghikUcy của bạn: http://localhost:3000/#/owner/tro-so/opal-skyline",
+  "sender": "6752ac9287804d45e8f6d41a",
+  "createdAt": {
+    "$date": "2024-12-07T23:08:29.142Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T23:08:29.142Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756f45f0e27583d6aa34bbf"
+  },
+  "notiUsers": [
+    "6752ac9287804d45e8f6d41a",
+    "6752a5b7f7588b1a2464a5eb"
+  ],
+  "message": "Tôi đang quan tâm đến phòng có có mã  7vo0UiQ của bạn: http://localhost:3000/#/owner/tro-so/cho-thue-nha-tro-gia-soc-4-5-tr-trieu-tai-duong-to-vinh-dien",
+  "sender": "6752ac9287804d45e8f6d41a",
+  "createdAt": {
+    "$date": "2024-12-09T13:45:03.669Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T13:45:03.669Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756f4e40e27583d6aa34bc9"
+  },
+  "notiUsers": [
+    "6752ac9287804d45e8f6d41a",
+    "6752a5b7f7588b1a2464a5eb"
+  ],
+  "message": "Tôi đang quan tâm đến phòng có có mã  7vo0UiQ của bạn: http://localhost:3000/#/owner/tro-so/cho-thue-nha-tro-gia-soc-4-5-tr-trieu-tai-duong-to-vinh-dien",
+  "sender": "6752ac9287804d45e8f6d41a",
+  "createdAt": {
+    "$date": "2024-12-09T13:47:16.251Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T13:47:16.251Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6757818e600bc29e56a1c789"
+  },
+  "notiUsers": [
+    "67529e30f7588b1a2464a52b",
+    "6752ac9287804d45e8f6d41a"
+  ],
+  "message": "Tiền trọ tháng 12/2024 đến hạn. Vui lòng kiểm tra mail.",
+  "sender": "67529e30f7588b1a2464a52b",
+  "createdAt": {
+    "$date": "2024-12-09T23:47:26.257Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T23:47:26.257Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675783d8600bc29e56a1c7dd"
+  },
+  "notiUsers": [
+    "6752ac9287804d45e8f6d41a",
+    "67529e30f7588b1a2464a52b"
+  ],
+  "message": "Mã phòng ZHC1GiO: Máy giặt bị hư rồi",
+  "sender": "6752ac9287804d45e8f6d41a",
+  "createdAt": {
+    "$date": "2024-12-09T23:57:12.412Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T23:57:12.412Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67584cb64821e4a25593a771"
+  },
+  "notiUsers": [
+    "67529e30f7588b1a2464a52b",
+    "6752ac9287804d45e8f6d41a"
+  ],
+  "message": "hi",
+  "sender": "67529e30f7588b1a2464a52b",
+  "createdAt": {
+    "$date": "2024-12-10T14:14:14.711Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-10T14:14:14.711Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67584d4d4821e4a25593a7f6"
+  },
+  "notiUsers": [
+    "67529e30f7588b1a2464a52b",
+    "6752ac9287804d45e8f6d41a"
+  ],
+  "message": "yahallo",
+  "sender": "67529e30f7588b1a2464a52b",
+  "createdAt": {
+    "$date": "2024-12-10T14:16:45.261Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-10T14:16:45.261Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67584e6f4821e4a25593a81e"
+  },
+  "notiUsers": [
+    "67529e30f7588b1a2464a52b",
+    "67565f9e7bd6e09b863d84fc"
+  ],
+  "message": "chào",
+  "sender": "67529e30f7588b1a2464a52b",
+  "createdAt": {
+    "$date": "2024-12-10T14:21:35.288Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-10T14:21:35.288Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67584e6f4821e4a25593a820"
+  },
+  "notiUsers": [
+    "67529e30f7588b1a2464a52b",
+    "6752ac9287804d45e8f6d41a"
+  ],
+  "message": "chào",
+  "sender": "67529e30f7588b1a2464a52b",
+  "createdAt": {
+    "$date": "2024-12-10T14:21:35.295Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-10T14:21:35.295Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6758c120eecac185bec1575c"
+  },
+  "notiUsers": [
+    "67529e30f7588b1a2464a52b",
+    "67565f9e7bd6e09b863d84fc"
+  ],
+  "message": "All: Ngày mai cúp điện",
+  "sender": "67529e30f7588b1a2464a52b",
+  "createdAt": {
+    "$date": "2024-12-10T22:30:56.278Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-10T22:30:56.278Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6758c120eecac185bec1575e"
+  },
+  "notiUsers": [
+    "67529e30f7588b1a2464a52b",
+    "6752ac9287804d45e8f6d41a"
+  ],
+  "message": "All: Ngày mai cúp điện",
+  "sender": "67529e30f7588b1a2464a52b",
+  "createdAt": {
+    "$date": "2024-12-10T22:30:56.288Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-10T22:30:56.288Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6758fab5eecac185bec158ed"
+  },
+  "notiUsers": [
+    "6752ac9287804d45e8f6d41a",
+    "67529e30f7588b1a2464a52b"
+  ],
+  "message": "Tôi đang quan tâm đến phòng có có mã  M2XBQ_n của bạn: http://localhost:3000/#/owner/tro-so/sherwood-suites",
+  "sender": "6752ac9287804d45e8f6d41a",
+  "createdAt": {
+    "$date": "2024-12-11T02:36:37.914Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T02:36:37.914Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6759021deecac185bec15af5"
+  },
+  "notiUsers": [
+    "6752ac9287804d45e8f6d41a",
+    "67529e30f7588b1a2464a52b"
+  ],
+  "message": "Tôi đang quan tâm đến phòng có có mã  M2XBQ_n của bạn: http://localhost:3000/#/owner/tro-so/sherwood-suites",
+  "sender": "6752ac9287804d45e8f6d41a",
+  "createdAt": {
+    "$date": "2024-12-11T03:08:13.064Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:08:13.064Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6759036beecac185bec15bc6"
+  },
+  "notiUsers": [
+    "67529e30f7588b1a2464a52b",
+    "6752ac9287804d45e8f6d41a"
+  ],
+  "message": "Tiền trọ tháng 12/2024 đến hạn. Vui lòng kiểm tra.",
+  "sender": "67529e30f7588b1a2464a52b",
+  "createdAt": {
+    "$date": "2024-12-11T03:13:47.696Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:13:47.696Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675903d0eecac185bec15bed"
+  },
+  "notiUsers": [
+    "6752ac9287804d45e8f6d41a",
+    "67529e30f7588b1a2464a52b"
+  ],
+  "message": "Mã phòng M2XBQ_n: máy giặt hư rồi!!!",
+  "sender": "6752ac9287804d45e8f6d41a",
+  "createdAt": {
+    "$date": "2024-12-11T03:15:28.634Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:15:28.634Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675907b6eecac185bec15d51"
+  },
+  "notiUsers": [
+    "6752ac9287804d45e8f6d41a",
+    "67529e30f7588b1a2464a52b"
+  ],
+  "message": "Tôi đang quan tâm đến phòng có có mã  M2XBQ_n của bạn: http://localhost:3000/#/owner/tro-so/sherwood-suites",
+  "sender": "6752ac9287804d45e8f6d41a",
+  "createdAt": {
+    "$date": "2024-12-11T03:32:06.202Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:32:06.202Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67590954eecac185bec15e31"
+  },
+  "notiUsers": [
+    "67529e30f7588b1a2464a52b",
+    "6752ac9287804d45e8f6d41a"
+  ],
+  "message": "Tiền trọ tháng 12/2024 đến hạn. Vui lòng kiểm tra.",
+  "sender": "67529e30f7588b1a2464a52b",
+  "createdAt": {
+    "$date": "2024-12-11T03:39:00.448Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:39:00.448Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675909aceecac185bec15e4f"
+  },
+  "notiUsers": [
+    "6752ac9287804d45e8f6d41a",
+    "67529e30f7588b1a2464a52b"
+  ],
+  "message": "Mã phòng M2XBQ_n: Máy giặt hư rồi!!!",
+  "sender": "6752ac9287804d45e8f6d41a",
+  "createdAt": {
+    "$date": "2024-12-11T03:40:28.831Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:40:28.831Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67590a5eeecac185bec15ee2"
+  },
+  "notiUsers": [
+    "67529e30f7588b1a2464a52b",
+    "6752ac9287804d45e8f6d41a"
+  ],
+  "message": "All: Ngày 12/12/2024 toàn bộ khu vực thủ đức cúp điện",
+  "sender": "67529e30f7588b1a2464a52b",
+  "createdAt": {
+    "$date": "2024-12-11T03:43:26.754Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:43:26.754Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67590a5eeecac185bec15ee4"
+  },
+  "notiUsers": [
+    "67529e30f7588b1a2464a52b",
+    "67565f9e7bd6e09b863d84fc"
+  ],
+  "message": "All: Ngày 12/12/2024 toàn bộ khu vực thủ đức cúp điện",
+  "sender": "67529e30f7588b1a2464a52b",
+  "createdAt": {
+    "$date": "2024-12-11T03:43:26.759Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:43:26.759Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67590a98eecac185bec15f0e"
+  },
+  "notiUsers": [
+    "67529e30f7588b1a2464a52b",
+    "6752ac9287804d45e8f6d41a"
+  ],
+  "message": "All: hi",
+  "sender": "67529e30f7588b1a2464a52b",
+  "createdAt": {
+    "$date": "2024-12-11T03:44:24.506Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:44:24.506Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67590a98eecac185bec15f10"
+  },
+  "notiUsers": [
+    "67529e30f7588b1a2464a52b",
+    "67565f9e7bd6e09b863d84fc"
+  ],
+  "message": "All: hi",
+  "sender": "67529e30f7588b1a2464a52b",
+  "createdAt": {
+    "$date": "2024-12-11T03:44:24.514Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:44:24.514Z"
+  },
+  "__v": 0
+}]

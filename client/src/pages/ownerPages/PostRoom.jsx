@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import {
   postRoom,
   clearAlert,
+  importRooms,
 } from "../../features/roomOwner/roomOwnerSlice";
 
 import postRoomImg from "../../assets/images/postRoomImg.svg";
@@ -109,6 +110,21 @@ const PostRoom = () => {
     setFormValues(prevValues => ({...prevValues, district: ""}));
   }, [values.province]);
 
+  const handleImport = (e) => {
+    e.preventDefault();
+
+    const fileInput = document.getElementById("jsonFileInput");
+    const file = fileInput.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        const jsonData = JSON.parse(reader.result);
+        dispatch(importRooms(jsonData)); // Gọi hành động importRooms với dữ liệu JSON
+      };
+      reader.readAsText(file);
+    }
+  };
+
   return (
     <div>
       <main className="px-6 h-full mt-7">
@@ -118,8 +134,24 @@ const PostRoom = () => {
               <div className="flex flex-col justify-center items-center mt-3 mb-4">
                 <h3 className="font-heading font-bold">Đăng bài cho thuê </h3>
                 <p className="text-gray-400 text-sm">
-                  Vui lòng điền đầy đủ thông tin
+                  HOẶC
                 </p>
+                  {/* LinkLabel for Import Data */}
+                  <span
+  onClick={() => document.getElementById('jsonFileInput').click()} // Mở file input khi nhấn
+  className="text-primary cursor-pointer text-lg underline font-medium"
+>
+  Tải dữ liệu phòng lên (tệp có đuôi .JSON)
+</span>
+  
+  {/* Hidden input for file upload */}
+  <input
+    type="file"
+    id="jsonFileInput"
+    accept=".json"
+    className="hidden"
+    onChange={handleImport} // Xử lý import file JSON
+  />
               </div>
               <div className="flex flex-wrap flex-col gap-2 ml-5">
                 <div className="flex flex-col gap-4 my-2">
@@ -294,6 +326,16 @@ const PostRoom = () => {
                     "ĐĂNG"
                   )}
                 </Button>
+                <div className="mt-4">
+  <input
+    type="file"
+    id="jsonFileInput"
+    accept=".json"
+    className="hidden"
+    onChange={handleImport} // Thêm sự kiện onChange cho input
+  />
+</div>
+
               </div>
             </form>
           </div>

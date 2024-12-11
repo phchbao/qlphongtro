@@ -7,6 +7,7 @@ import {
   updateProfile,
   addContactToggle,
   getAllContacts,
+  getAllContactIds,
 } from "../controllers/ownerUserControllers.js";
 
 import upload from "../middleware/multerImageMiddleware.js"; // Import middleware Multer
@@ -41,5 +42,7 @@ router.patch("/addContact/:id", addContactToggle);
  * @route PATCH /api/owner/contacts/all
  */
 router.get("/contacts/all", getAllContacts);
+
+router.get("/contacts/ids", getAllContactIds);
 
 export default router;

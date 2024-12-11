@@ -52,16 +52,18 @@ export const addOrRemoveContact = createAsyncThunk(
 
 export const getAllContacts = createAsyncThunk(
   "getAllContacts",
-  async ({ name }, thunkAPI) => {
+  async ({ name, email }, thunkAPI) => {
     try {
       let url = "/owner/contacts/all";
-      if (name) {
-        url = url + `?name=${name}`;
-      }
+      const params = [];
+      if (name) params.push(`name=${name}`);
+      if (email) params.push(`email=${email}`);
+      if (params.length) url += `?${params.join("&")}`;
+
       const { data } = await axiosFetch.get(url);
-      return await data;
+      return data;
     } catch (error) {
-      return thunkAPI.rejectWithValue(error.response.data.msg);
+      return thunkAPI.rejectWithValue(error.response?.data?.msg || "Lỗi không xác định");
     }
   }
 );
@@ -118,6 +120,18 @@ export const getOwnerAllContracts = createAsyncThunk(
   }
 );
 
+export const getAllContactIds = createAsyncThunk(
+  "getAllContactIds",
+  async (_, thunkAPI) => {
+    try {
+      const { data } = await axiosFetch.get("/owner/contacts/ids");
+      return data.contactIds; // API trả về danh sách ID
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.response?.data?.msg || "Lỗi không xác định");
+    }
+  }
+);
+
 const ownerUserSlice = createSlice({
   name: "ownerUser",
   initialState: {
@@ -129,6 +143,7 @@ const ownerUserSlice = createSlice({
     isProcessing: false,
     isContact: null,
     contacts: null,
+    contactIds: null,
     contractDetail: null,
     success: null,
     allContracts: null,
@@ -204,12 +219,11 @@ const ownerUserSlice = createSlice({
       })
       .addCase(getAllContacts.pending, (state) => {
         state.isLoading = true;
-        state.success = null;
+        state.alertFlag = false;
       })
       .addCase(getAllContacts.fulfilled, (state, action) => {
         state.contacts = action.payload.contacts;
         state.isLoading = false;
-        state.alertFlag = false;
       })
       .addCase(getAllContacts.rejected, (state, action) => {
         state.isLoading = false;
@@ -273,6 +287,20 @@ const ownerUserSlice = createSlice({
         state.alertFlag = false;
       })
       .addCase(getOwnerAllContracts.rejected, (state, action) => {
+        state.isLoading = false;
+        state.alertFlag = true;
+        state.alertMsg = action.payload;
+        state.alertType = "error";
+      })
+      .addCase(getAllContactIds.pending, (state) => {
+        state.isLoading = true;
+        state.alertFlag = false;
+      })
+      .addCase(getAllContactIds.fulfilled, (state, action) => {
+        state.contactIds = action.payload;
+        state.isLoading = false;
+      })
+      .addCase(getAllContactIds.rejected, (state, action) => {
         state.isLoading = false;
         state.alertFlag = true;
         state.alertMsg = action.payload;

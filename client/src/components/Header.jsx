@@ -187,14 +187,14 @@ const Header = () => {
     </Link>
   )}
 
-  <Link to={`/${userType}/survey`}>
-    <MenuItem>
-      <ListItemIcon>
-        <HelpOutline fontSize="small" />
-      </ListItemIcon>
-      Khảo sát
-    </MenuItem>
-  </Link>
+<a href="https://forms.gle/SWdQhNV2qB2hqxhb6" target="_blank" rel="noopener noreferrer">
+  <MenuItem>
+    <ListItemIcon>
+      <HelpOutline fontSize="small" />
+    </ListItemIcon>
+    Khảo sát
+  </MenuItem>
+</a>
 
   <Divider />
   <MenuItem onClick={logOutUser}>

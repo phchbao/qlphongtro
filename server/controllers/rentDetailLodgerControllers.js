@@ -23,7 +23,7 @@ const getSingleRentDetailsLodgerView = async (req, res) => {
     });
 
   if (!rentDetail) {
-    throw new NotFoundError("Không tìm thấy chi tiết thuê");
+    throw new NotFoundError("Không tìm thấy hóa đơn");
   }
 
   const rentStatus = await rentDetail.isRentPaid();

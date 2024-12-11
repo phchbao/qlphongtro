@@ -1,0 +1,1216 @@
+[{
+  "_id": {
+    "$oid": "67529f12f7588b1a2464a535"
+  },
+  "roomId": "7b2vd9l",
+  "title": "Vinhomes Grand Park Quận 9",
+  "price": 4500000,
+  "address": {
+    "province": "TP. Hồ Chí Minh",
+    "district": "Quận 9",
+    "detailAddress": "Vinhomes Grand Park, Đường Nguyễn Xiển, Phường Long Thạnh Mỹ, Quận 9, Hồ Chí Minh"
+  },
+  "description": "Full giỏ hàng cho thuê căn hộ Vinhomes Grand Park quận 9 giá tốt/ giá rẻ.",
+  "isHidden": false,
+  "area": 50,
+  "beds": 2,
+  "amenities": [
+    "WiFi ",
+    "Điều hòa ",
+    "Nhà bếp ",
+    "Gác "
+  ],
+  "category": "Chung cư mini",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467915/tro-so-system/roomImages/vcc5hrgrk24yttuoqtrk.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467918/tro-so-system/roomImages/opds79onjvbl70d68zpo.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467921/tro-so-system/roomImages/hf91uvj6jd7epd5ehjrg.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-06T06:52:02.405Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-06T06:52:02.405Z"
+  },
+  "slug": "vinhomes-grand-park-quan-9",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67529f63f7588b1a2464a53c"
+  },
+  "roomId": "HPke9SV",
+  "title": "Sleepbox tân bình giá rẻ",
+  "price": 1400000,
+  "address": {
+    "province": "TP. Hồ Chí Minh",
+    "district": "Quận Tân Bình",
+    "detailAddress": "Cộng Hòa, Tân Bình"
+  },
+  "description": "1tr4 nữ, 1tr6 nam",
+  "isHidden": false,
+  "area": 15,
+  "beds": 1,
+  "amenities": [
+    "WiFi "
+  ],
+  "category": "Sleepbox",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467997/tro-so-system/roomImages/z6hjbsrdsuf3ludpozrh.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467999/tro-so-system/roomImages/ishp4rjrifzcjrd64zsq.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733468002/tro-so-system/roomImages/ji1t4cgitt3epo71enye.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-06T06:53:23.152Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-06T06:53:23.152Z"
+  },
+  "slug": "sleepbox-tan-binh-gia-re",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67529fadf7588b1a2464a543"
+  },
+  "roomId": "Mz3g0cX",
+  "title": "KTX CĐXD",
+  "price": 400000,
+  "address": {
+    "province": "TP. Hồ Chí Minh",
+    "district": "Thành phố Thủ Đức",
+    "detailAddress": "Linh Chiểu Thủ Đức"
+  },
+  "description": "Test",
+  "isHidden": false,
+  "area": 80,
+  "beds": 8,
+  "amenities": [
+    "WiFi "
+  ],
+  "category": "KTX",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733468072/tro-so-system/roomImages/yo1lanm0pzmutcm6lbbs.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733468074/tro-so-system/roomImages/csefdh0kfxch7fq4szyi.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733468076/tro-so-system/roomImages/manqcrurmsrlnnccc3ir.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-06T06:54:37.874Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-06T06:54:37.874Z"
+  },
+  "slug": "ktx-cdxd",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752a044f7588b1a2464a550"
+  },
+  "roomId": "pKlVenm",
+  "title": "Chung cư mini giá rẻ Q6",
+  "price": 6500000,
+  "address": {
+    "province": "TP. Hồ Chí Minh",
+    "district": "Quận 6",
+    "detailAddress": "Đường Nguyễn Văn Luông, Phường 10, Quận 6, Hồ Chí Minh"
+  },
+  "description": "Dạng duplex Full nội thất cao cấp bảo hành 12t.\r\nGiờ giấc tự do linh hoạt, của khoá vân tay thẻ từ.",
+  "isHidden": false,
+  "area": 50,
+  "beds": 1,
+  "amenities": [
+    "WiFi ",
+    "Điều hòa ",
+    "Nhà bếp ",
+    "Gác "
+  ],
+  "category": "Chung cư mini",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733468220/tro-so-system/roomImages/u8wadmx6dicmouuwvznw.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733468224/tro-so-system/roomImages/fn8pw2c8obquwxrbpz7d.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733468226/tro-so-system/roomImages/yt0fpb0tmlbheourjf8x.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-06T06:57:08.112Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-06T06:57:08.112Z"
+  },
+  "slug": "chung-cu-mini-gia-re-q6",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752a0e5f7588b1a2464a563"
+  },
+  "roomId": "ewY8djc",
+  "title": "Phòng khép kín - ful nội thất mới tinh - gần Aeon Quận 8",
+  "price": 4000000,
+  "address": {
+    "province": "TP. Hồ Chí Minh",
+    "district": "Quận 8",
+    "detailAddress": "Số 50, Đường Số 5, Phường 4, Quận 8, Hồ Chí Minh"
+  },
+  "description": "Chính chủ cho thuê phòng khép kín - nội thất mới tinh - gần Aeon Quận 8 - giá chỉ từ 4,3 triệu.\r\n\r\nCHDV ngay Phạm Hùng - gần Aeon Quận 8.\r\nĐịa chỉ: Số 50 Đường số 5, Phạm Hùng, Phường 4, Quận 8.\r\nLoại phòng: Phòng khép kín, full nội thất.\r\n- Diện tích 18m², 20m², 25m², 30m².\r\nGiá từ: 4.3 triệu VNĐ.",
+  "isHidden": false,
+  "area": 19,
+  "beds": 2,
+  "amenities": [
+    "WiFi ",
+    "Nhà bếp "
+  ],
+  "category": "Truyền thống",
+  "status": false,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733468383/tro-so-system/roomImages/fi0ymaesguav9zopvvb3.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733468385/tro-so-system/roomImages/tprjtyat311zoe7kppga.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733468388/tro-so-system/roomImages/qmxgwmljnfjs61amwkik.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-06T06:59:49.280Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-08T01:00:11.640Z"
+  },
+  "slug": "phong-khep-kin-ful-noi-that-moi-tinh-gan-aeon-quan-8",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752a25bf7588b1a2464a583"
+  },
+  "roomId": "iOi5nQ8",
+  "title": "Phòng trọ 40 m2. Lô góc 2 mặt tiền",
+  "price": 4000000,
+  "address": {
+    "province": "TP. Hồ Chí Minh",
+    "district": "Thành phố Thủ Đức",
+    "detailAddress": "Đường Bình Chiểu, Phường Bình Chiểu, Thủ Đức, Hồ Chí Minh"
+  },
+  "description": "Phòng mới 40m². Có gác xép. Cổng riêng biệt. Phòng còn mới. Chống nóng 2 lớp. Gạch ốp cao 1.7m. Thiết bị vệ sinh cao cấp. Khu dân cư yên tĩnh.",
+  "isHidden": false,
+  "area": 40,
+  "beds": 1,
+  "amenities": [
+    "WiFi ",
+    "Nhà bếp "
+  ],
+  "category": "Truyền thống",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733468755/tro-so-system/roomImages/rgffzobui7uz7ggnld3y.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733468758/tro-so-system/roomImages/tzkgqfejjecuruy9n91n.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733468761/tro-so-system/roomImages/txvyhgqz87nlywwxk30n.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-06T07:06:03.199Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-06T07:06:03.199Z"
+  },
+  "slug": "phong-tro-40-m2-lo-goc-2-mat-tien",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752a334f7588b1a2464a59c"
+  },
+  "roomId": "2DCNbJE",
+  "title": "KÝ TÚC XÁ 1134, Q7 - NGÔI NHÀ THỨ 2 CỦA BẠN",
+  "price": 900000,
+  "address": {
+    "province": "TP. Hồ Chí Minh",
+    "district": "Quận 7",
+    "detailAddress": "  1134/14a, Hẻm 1134 Đường Huỳnh Tấn Phát, Phường Tân Phú, Quận 7, Tp Hồ Chí Minh"
+  },
+  "description": "- Tặng 100k tháng đầu tiên cho HĐ 12 tháng\r\n- Tặng 50k tháng đầu tiên cho HĐ 6 tháng",
+  "isHidden": false,
+  "area": 100,
+  "beds": 7,
+  "amenities": [
+    "WiFi ",
+    "Nhà bếp "
+  ],
+  "category": "KTX",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733468972/tro-so-system/roomImages/qs5hpuqggeal0tg7pi4f.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733468976/tro-so-system/roomImages/ptppd2at2hx2qmgrbvub.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733468979/tro-so-system/roomImages/vxnbnfiefq4cslhonyoh.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-06T07:09:40.218Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-06T07:09:40.218Z"
+  },
+  "slug": "ky-tuc-xa-1134-q7-ngoi-nha-thu-2-cua-ban",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752a3e1f7588b1a2464a5b2"
+  },
+  "roomId": "K4ncXpY",
+  "title": "Sleepbox gần đại học Nguyễn Tất Thành",
+  "price": 1150000,
+  "address": {
+    "province": "TP. Hồ Chí Minh",
+    "district": "Quận 4",
+    "detailAddress": "84, Đường Nguyễn Tất Thành, Phường 13, Quận 4, Tp Hồ Chí Minh"
+  },
+  "description": "Phòng mới, chi phí thấp, phù hợp cho sinh viên và người mới đi làm.\r\n- Có nhà xe rộng rãi",
+  "isHidden": false,
+  "area": 15,
+  "beds": 1,
+  "amenities": [
+    "WiFi ",
+    "Điều hòa "
+  ],
+  "category": "Sleepbox",
+  "status": false,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733469146/tro-so-system/roomImages/b90uaquu9uw3pp5ssxkj.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733469150/tro-so-system/roomImages/zdxplqanoobt6uekjga3.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733469152/tro-so-system/roomImages/lt9ontew92sfzifabgxx.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-06T07:12:33.723Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T13:19:30.507Z"
+  },
+  "slug": "sleepbox-gan-dai-hoc-nguyen-tat-thanh",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752a4ddf7588b1a2464a5bf"
+  },
+  "roomId": "M2XBQ_n",
+  "title": "Sherwood Suites",
+  "price": 8000000,
+  "address": {
+    "province": "TP. Hồ Chí Minh",
+    "district": "Quận 3",
+    "detailAddress": "Nam Ky Khoi Nghia, Vo Thi Sau Ward, District 3, , Quận 3, TP. Hồ Chí Minh, Việt Nam"
+  },
+  "description": "Tọa lạc tại Thành phố Hồ Chí Minh, Sherwood Suites cung cấp chỗ nghỉ với WiFi miễn phí và có hồ bơi, trung tâm thể dục, quán bar cũng như tầm nhìn ra thành phố.\r\n\r\nMỗi căn hộ tại đây đều có bếp nhỏ đầy đủ tiện nghi với lò vi sóng, khu vực ghế ngồi đi kèm ghế sofa, TV, máy giặt và phòng tắm riêng với bồn tắm cùng máy sấy tóc. Tủ lạnh, lò nướng và ấm đun nước cũng được trang bị trong phòng.",
+  "isHidden": false,
+  "area": 100,
+  "beds": 5,
+  "amenities": [
+    "WiFi ",
+    "Điều hòa ",
+    "Nhà bếp ",
+    "Gác "
+  ],
+  "category": "Homestay",
+  "status": false,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733469398/tro-so-system/roomImages/lmaxvlkyvznoxyvki9kk.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733469401/tro-so-system/roomImages/rckqjfdwvphghrbohawz.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733469403/tro-so-system/roomImages/wxhaod2lbychsudmyhdz.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-06T07:16:45.034Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:34:47.228Z"
+  },
+  "slug": "sherwood-suites",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752a56bf7588b1a2464a5d8"
+  },
+  "roomId": "nUigCio",
+  "title": "PANDORA HOUSE",
+  "price": 10000000,
+  "address": {
+    "province": "TP. Hồ Chí Minh",
+    "district": "Quận 10",
+    "detailAddress": "497/5 Sư Vạn Hạnh, Phường 12, Quận 10, TP.HCM"
+  },
+  "description": "PANDORA HOUSE nằm ở TP. Hồ Chí Minh, cách Chùa Giác Lâm 3.1 km, cung cấp chỗ nghỉ có điều hòa, Wi-Fi miễn phí, cũng như sân hiên.\r\n\r\nMỗi căn được thiết kế gồm bếp đầy đủ tiện nghi với bàn ăn, TV màn hình phẳng có truyền hình vệ tinh, cùng phòng tắm riêng có vòi sen, đồ vệ sinh cá nhân miễn phí và máy sấy tóc. Tủ lạnh, lò vi sóng và bếp, cũng như ấm đun nước đều được cung cấp.",
+  "isHidden": false,
+  "area": 100,
+  "beds": 5,
+  "amenities": [
+    "WiFi ",
+    "Điều hòa ",
+    "Nhà bếp ",
+    "Gác "
+  ],
+  "category": "Homestay",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733469542/tro-so-system/roomImages/ywrz8fonvviw0hv3xpsh.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733469544/tro-so-system/roomImages/sekujae6kwpcxgjkfp5x.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733469546/tro-so-system/roomImages/qyfjspaahwi6kpuvuuhy.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-06T07:19:07.983Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-06T07:19:07.983Z"
+  },
+  "slug": "pandora-house",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752a66cf7588b1a2464a5f5"
+  },
+  "roomId": "NnBkLPU",
+  "title": "N3 Opera Residence",
+  "price": 7000000,
+  "address": {
+    "province": "Bình Dương",
+    "district": "Thành phố Dĩ An",
+    "detailAddress": "Random, Dĩ An, Bình Dương"
+  },
+  "description": "N3 Opera Residence nhìn ra sông, có Wi-Fi miễn phí và chỗ đậu xe riêng miễn phí, tọa lạc ở TP. Hồ Chí Minh, cách Nhà hát Thành phố 5 phút đi bộ.\n\nChỗ nghỉ có điều hòa, bếp đầy đủ tiện nghi, TV màn hình phẳng, cũng như phòng tắm riêng với vòi sen, đồ vệ sinh cá nhân miễn phí và máy sấy tóc. Tủ lạnh và lò vi sóng, cũng như ấm đun nước đều được cung cấp.",
+  "isHidden": false,
+  "area": 100,
+  "beds": 4,
+  "amenities": [
+    "Gác "
+  ],
+  "category": "Homestay",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733469799/tro-so-system/roomImages/mydeddkqjctyxuduzpjn.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733469801/tro-so-system/roomImages/bk1po8soyjsve4pai29e.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733469803/tro-so-system/roomImages/uuwtand2nkrbpp1uygr7.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "6752a5b7f7588b1a2464a5eb"
+  },
+  "createdAt": {
+    "$date": "2024-12-06T07:23:24.135Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-06T07:37:56.130Z"
+  },
+  "slug": "n3-opera-residence",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752a6c3f7588b1a2464a602"
+  },
+  "roomId": "XbgkcLH",
+  "title": "KTX Cao đẳng xây dựng 2",
+  "price": 1000000,
+  "address": {
+    "province": "Bình Dương",
+    "district": "Thị xã Bến Cát",
+    "detailAddress": "S1 VVN"
+  },
+  "description": "Test",
+  "isHidden": false,
+  "area": 80,
+  "beds": 8,
+  "amenities": [
+    "WiFi "
+  ],
+  "category": "KTX",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733469886/tro-so-system/roomImages/j9ilj31dvpmnwhprd37j.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733469888/tro-so-system/roomImages/btazwbvji7v4e77nogps.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733469890/tro-so-system/roomImages/sxihh4jndqdfu9j0giep.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "6752a5b7f7588b1a2464a5eb"
+  },
+  "createdAt": {
+    "$date": "2024-12-06T07:24:51.695Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-06T07:36:50.233Z"
+  },
+  "slug": "ktx-cao-dang-xay-dung-2",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752a744f7588b1a2464a60f"
+  },
+  "roomId": "7vo0UiQ",
+  "title": "Cho thuê nhà trọ giá sốc 4,5 tr triệu tại đường tÔ Vĩnh Diện",
+  "price": 4500000,
+  "address": {
+    "province": "Bình Dương",
+    "district": "Thành phố Dĩ An",
+    "detailAddress": "Đường Tô Vĩnh Diện, Phường Đông Hòa, Dĩ An, Bình Dương"
+  },
+  "description": "Nhanh tay! Căn nhà trọ cho thuê tại đường Tô Vĩnh Diện, Phường Đông Hòa, Dĩ An, Bình Dương với diện tích 40m², thiết kế 2PN + 1 WC/PT + bếp. Căn phòng được trang bị nội thất cơ bản như điều hòa, tủ lạnh, giường, tạo điều kiện sống thoải mái cho bạn và gia đình.",
+  "isHidden": false,
+  "area": 40,
+  "beds": 2,
+  "amenities": [
+    "WiFi ",
+    "Điều hòa ",
+    "Nhà bếp "
+  ],
+  "category": "Truyền thống",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733470014/tro-so-system/roomImages/cj3ov7lzzv1wbemldiv8.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733470016/tro-so-system/roomImages/t4rmiu71wyjbjr4v1yqn.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733470018/tro-so-system/roomImages/c8qejuyn1d6fwzpetwm3.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "6752a5b7f7588b1a2464a5eb"
+  },
+  "createdAt": {
+    "$date": "2024-12-06T07:27:00.240Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-06T07:27:00.240Z"
+  },
+  "slug": "cho-thue-nha-tro-gia-soc-4-5-tr-trieu-tai-duong-to-vinh-dien",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752ab7287804d45e8f6d3e8"
+  },
+  "roomId": "A_91E7W",
+  "title": "Sleepbox Bàu Bàng",
+  "price": 1500000,
+  "address": {
+    "province": "Bình Dương",
+    "district": "Huyện Bàu Bàng",
+    "detailAddress": "aaaa"
+  },
+  "description": "Sleepbox Bình Dương",
+  "isHidden": false,
+  "area": 14,
+  "beds": 1,
+  "amenities": [
+    "WiFi "
+  ],
+  "category": "Sleepbox",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733471084/tro-so-system/roomImages/tmrddkkhm1rot5yjjit2.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733471087/tro-so-system/roomImages/bw3pnmy2hcisdwr1tnnr.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733471089/tro-so-system/roomImages/nngxpkl79nsw9ce8ayl0.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "6752a5b7f7588b1a2464a5eb"
+  },
+  "createdAt": {
+    "$date": "2024-12-06T07:44:50.143Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-06T07:45:25.383Z"
+  },
+  "slug": "sleepbox-bau-bang",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752ac3c87804d45e8f6d40d"
+  },
+  "roomId": "ghikUcy",
+  "title": "Opal Skyline",
+  "price": 4500000,
+  "address": {
+    "province": "Bình Dương",
+    "district": "Thành phố Thuận An",
+    "detailAddress": "Dự án Opal Skyline, Đường Nguyễn Văn Tiết, Phường Lái Thiêu, Thuận An, Bình Dương"
+  },
+  "description": "Các tiện ích liền kề dự án: Trường cấp 1, 2, 3 cách dự án 500m, Siêu thị Aeon Mall, Bệnh viện quốc tế Hạnh Phúc, Lotte Mart, khu công nghiệp VSIP, Khu công nghiệp Việt Sing, KCN Việt Hương, trung tâm hành chính TP Thuận An.\r\nBảo vệ an ninh 24/24, thẻ từ căn hộ từng tầng.",
+  "isHidden": false,
+  "area": 40,
+  "beds": 3,
+  "amenities": [
+    "WiFi ",
+    "Điều hòa ",
+    "Nhà bếp ",
+    "Gác "
+  ],
+  "category": "Chung cư mini",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733471287/tro-so-system/roomImages/we2xmymvfb2d27qec0iv.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733471289/tro-so-system/roomImages/mlljaj1kqkpaoxhwg8ho.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733471292/tro-so-system/roomImages/nheefh2ngpzzake0vpds.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "6752a5b7f7588b1a2464a5eb"
+  },
+  "createdAt": {
+    "$date": "2024-12-06T07:48:12.905Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-06T07:48:12.905Z"
+  },
+  "slug": "opal-skyline",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752b09a87804d45e8f6d45a"
+  },
+  "roomId": "ZHC1GiO",
+  "title": "Dự án Opal Skyline",
+  "price": 3000000,
+  "address": {
+    "province": "Bình Dương",
+    "district": "Thị xã Tân Uyên",
+    "detailAddress": "Test, Bình Dương"
+  },
+  "description": "Các tiện ích liền kề dự án: Trường cấp 1, 2, 3 cách dự án 500m, Siêu thị Aeon Mall, Bệnh viện quốc tế Hạnh Phúc, Lotte Mart, khu công nghiệp VSIP, Khu công nghiệp Việt Sing, KCN Việt Hương, trung tâm hành chính TP Thuận An.\nBảo vệ an ninh 24/24, thẻ từ căn hộ từng tầng.",
+  "isHidden": false,
+  "area": 35,
+  "beds": 1,
+  "amenities": [
+    "Gác "
+  ],
+  "category": "Truyền thống",
+  "status": false,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733472391/tro-so-system/roomImages/sicigmusywpup5hvvhj1.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733472396/tro-so-system/roomImages/yagltbe781ry7p570m9u.jpg",
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733472409/tro-so-system/roomImages/f0fmwd10eju5mozgffgb.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-06T08:06:50.089Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T04:08:28.102Z"
+  },
+  "slug": "du-an-opal-skyline",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756a7ddfb76960c78535952"
+  },
+  "roomId": "LCHJjp7",
+  "title": "Phòng trọ tại quận 1",
+  "slug": "phong-tro-tai-quan-1",
+  "price": 3000000,
+  "address": {
+    "province": "Hồ Chí Minh",
+    "district": "Quận 1",
+    "detailAddress": "123 Đường ABC, Quận 1"
+  },
+  "description": "Phòng sạch sẽ, thoáng mát, đầy đủ tiện nghi",
+  "isHidden": true,
+  "area": 20,
+  "beds": 1,
+  "amenities": [
+    "WiFi ",
+    "Điều hòa "
+  ],
+  "category": "Chung cư mini",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467915/tro-so-system/roomImages/vcc5hrgrk24yttuoqtrk.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-09T08:18:37.848Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T08:27:00.773Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756a7ddfb76960c78535953"
+  },
+  "roomId": "JLKyQQu",
+  "title": "Phòng trọ tại quận 3",
+  "slug": "phong-tro-tai-quan-3",
+  "price": 3500000,
+  "address": {
+    "province": "Hồ Chí Minh",
+    "district": "Quận 3",
+    "detailAddress": "456 Đường XYZ, Quận 3"
+  },
+  "description": "Phòng rộng rãi, thoáng mát, gần chợ",
+  "isHidden": true,
+  "area": 25,
+  "beds": 2,
+  "amenities": [
+    "WiFi ",
+    "Nhà bếp "
+  ],
+  "category": "KTX",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467918/tro-so-system/roomImages/opds79onjvbl70d68zpo.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-09T08:18:37.849Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T08:26:51.773Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6757a45d600bc29e56a1ca55"
+  },
+  "roomId": "uMbp7jD",
+  "title": "Phòng trọ tại quận 3",
+  "slug": "phong-tro-tai-quan-3-0004",
+  "price": 3500000,
+  "address": {
+    "province": "Hồ Chí Minh",
+    "district": "Quận 3",
+    "detailAddress": "456 Đường XYZ, Quận 3"
+  },
+  "description": "Phòng rộng rãi, thoáng mát, gần chợ",
+  "isHidden": true,
+  "area": 25,
+  "beds": 2,
+  "amenities": [
+    "WiFi ",
+    "Nhà bếp "
+  ],
+  "category": "KTX",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467918/tro-so-system/roomImages/opds79onjvbl70d68zpo.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-10T02:15:57.662Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-10T02:16:06.422Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6757a45d600bc29e56a1ca54"
+  },
+  "roomId": "OPsZKWY",
+  "title": "Phòng trọ tại quận 1",
+  "slug": "phong-tro-tai-quan-1-0002",
+  "price": 3000000,
+  "address": {
+    "province": "Hồ Chí Minh",
+    "district": "Quận 1",
+    "detailAddress": "123 Đường ABC, Quận 1"
+  },
+  "description": "Phòng sạch sẽ, thoáng mát, đầy đủ tiện nghi",
+  "isHidden": true,
+  "area": 20,
+  "beds": 1,
+  "amenities": [
+    "WiFi ",
+    "Điều hòa "
+  ],
+  "category": "Chung cư mini",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467915/tro-so-system/roomImages/vcc5hrgrk24yttuoqtrk.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-10T02:15:57.662Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-10T02:16:11.304Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6757a4b3600bc29e56a1ca8a"
+  },
+  "roomId": "JdVXWZ9",
+  "title": "Phòng trọ tại quận 3",
+  "slug": "phong-tro-tai-quan-3-0005",
+  "price": 3500000,
+  "address": {
+    "province": "Hồ Chí Minh",
+    "district": "Quận 3",
+    "detailAddress": "456 Đường XYZ, Quận 3"
+  },
+  "description": "Phòng rộng rãi, thoáng mát, gần chợ",
+  "isHidden": true,
+  "area": 25,
+  "beds": 2,
+  "amenities": [
+    "WiFi ",
+    "Nhà bếp "
+  ],
+  "category": "KTX",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467918/tro-so-system/roomImages/opds79onjvbl70d68zpo.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-10T02:17:23.490Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-10T02:17:44.852Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6757a4b3600bc29e56a1ca89"
+  },
+  "roomId": "FgRDYsP",
+  "title": "Phòng trọ tại quận 1",
+  "slug": "phong-tro-tai-quan-1-0003",
+  "price": 3000000,
+  "address": {
+    "province": "Hồ Chí Minh",
+    "district": "Quận 1",
+    "detailAddress": "123 Đường ABC, Quận 1"
+  },
+  "description": "Phòng sạch sẽ, thoáng mát, đầy đủ tiện nghi",
+  "isHidden": true,
+  "area": 20,
+  "beds": 1,
+  "amenities": [
+    "WiFi ",
+    "Điều hòa "
+  ],
+  "category": "Chung cư mini",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467915/tro-so-system/roomImages/vcc5hrgrk24yttuoqtrk.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-10T02:17:23.490Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-10T02:17:52.953Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6758f1c3eecac185bec157e8"
+  },
+  "roomId": "t07D4tj",
+  "title": "Phòng trọ tại quận 1",
+  "slug": "phong-tro-tai-quan-1-0004",
+  "price": 4000000,
+  "address": {
+    "province": "Bà Rịa - Vũng Tàu",
+    "district": "Huyện Xuyên Mộc",
+    "detailAddress": "123 Đường ABC, Quận 1"
+  },
+  "description": "Phòng sạch sẽ, thoáng mát, đầy đủ tiện nghi, cách âm",
+  "isHidden": true,
+  "area": 20,
+  "beds": 1,
+  "amenities": [
+    "Điều hòa "
+  ],
+  "category": "Chung cư mini",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467915/tro-so-system/roomImages/vcc5hrgrk24yttuoqtrk.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-11T01:58:28.018Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T01:59:34.332Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6758f1c4eecac185bec157e9"
+  },
+  "roomId": "m47I-Ev",
+  "title": "Phòng trọ tại quận 3",
+  "slug": "phong-tro-tai-quan-3-0006",
+  "price": 3500000,
+  "address": {
+    "province": "Hồ Chí Minh",
+    "district": "Quận 3",
+    "detailAddress": "456 Đường XYZ, Quận 3"
+  },
+  "description": "Phòng rộng rãi, thoáng mát, gần chợ",
+  "isHidden": true,
+  "area": 25,
+  "beds": 2,
+  "amenities": [
+    "WiFi ",
+    "Nhà bếp "
+  ],
+  "category": "KTX",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467918/tro-so-system/roomImages/opds79onjvbl70d68zpo.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-11T01:58:28.018Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T02:03:00.592Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6758fa18eecac185bec1588f"
+  },
+  "roomId": "wfmw1zR",
+  "title": "Phòng trọ tại quận 3",
+  "slug": "phong-tro-tai-quan-3-0007",
+  "price": 3500000,
+  "address": {
+    "province": "Bến Tre",
+    "district": "Huyện Mỏ Cày Nam",
+    "detailAddress": "456 Đường XYZ, Quận 3"
+  },
+  "description": "Phòng rộng rãi, thoáng mát, gần chợ, cách âm",
+  "isHidden": true,
+  "area": 25,
+  "beds": 2,
+  "amenities": [
+    "Gác "
+  ],
+  "category": "Chung cư mini",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467918/tro-so-system/roomImages/opds79onjvbl70d68zpo.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-11T02:34:00.009Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T02:35:06.955Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6758fa17eecac185bec1588e"
+  },
+  "roomId": "h5b9rlM",
+  "title": "Phòng trọ tại quận 1",
+  "slug": "phong-tro-tai-quan-1-0005",
+  "price": 3000000,
+  "address": {
+    "province": "Hồ Chí Minh",
+    "district": "Quận 1",
+    "detailAddress": "123 Đường ABC, Quận 1"
+  },
+  "description": "Phòng sạch sẽ, thoáng mát, đầy đủ tiện nghi",
+  "isHidden": true,
+  "area": 20,
+  "beds": 1,
+  "amenities": [
+    "WiFi ",
+    "Điều hòa "
+  ],
+  "category": "Chung cư mini",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467915/tro-so-system/roomImages/vcc5hrgrk24yttuoqtrk.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-11T02:34:00.009Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T02:35:13.220Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6758ff19eecac185bec159cd"
+  },
+  "roomId": "KYG6CR2",
+  "title": "Phòng trọ tại quận 1",
+  "slug": "phong-tro-tai-quan-1-0006",
+  "price": 3100000,
+  "address": {
+    "province": "Bình Dương",
+    "district": "Huyện Bàu Bàng",
+    "detailAddress": "123 Đường ABC, Quận 1"
+  },
+  "description": "Phòng sạch sẽ, thoáng mát, đầy đủ tiện nghi, cách âm",
+  "isHidden": true,
+  "area": 25,
+  "beds": 2,
+  "amenities": [
+    "Gác "
+  ],
+  "category": "Truyền thống",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467915/tro-so-system/roomImages/vcc5hrgrk24yttuoqtrk.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-11T02:55:21.357Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T02:56:21.962Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6758ff19eecac185bec159ce"
+  },
+  "roomId": "TcGTdqx",
+  "title": "Phòng trọ tại quận 3",
+  "slug": "phong-tro-tai-quan-3-0008",
+  "price": 3500000,
+  "address": {
+    "province": "Hồ Chí Minh",
+    "district": "Quận 3",
+    "detailAddress": "456 Đường XYZ, Quận 3"
+  },
+  "description": "Phòng rộng rãi, thoáng mát, gần chợ",
+  "isHidden": true,
+  "area": 25,
+  "beds": 2,
+  "amenities": [
+    "WiFi ",
+    "Nhà bếp "
+  ],
+  "category": "KTX",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467918/tro-so-system/roomImages/opds79onjvbl70d68zpo.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-11T02:55:21.357Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T02:56:32.782Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67590148eecac185bec15a49"
+  },
+  "roomId": "sfNe6QY",
+  "title": "Phòng trọ tại quận 1",
+  "slug": "phong-tro-tai-quan-1-0007",
+  "price": 3100000,
+  "address": {
+    "province": "Bình Định",
+    "district": "Huyện Tây Sơn",
+    "detailAddress": "123 Đường ABC, Quận 1"
+  },
+  "description": "Phòng sạch sẽ, thoáng mát, đầy đủ tiện nghi, cách âm",
+  "isHidden": true,
+  "area": 25,
+  "beds": 2,
+  "amenities": [
+    "Gác "
+  ],
+  "category": "Truyền thống",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467915/tro-so-system/roomImages/vcc5hrgrk24yttuoqtrk.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-11T03:04:40.741Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:06:00.057Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67590148eecac185bec15a4a"
+  },
+  "roomId": "58Y_jAk",
+  "title": "Phòng trọ tại quận 3",
+  "slug": "phong-tro-tai-quan-3-0009",
+  "price": 3500000,
+  "address": {
+    "province": "Hồ Chí Minh",
+    "district": "Quận 3",
+    "detailAddress": "456 Đường XYZ, Quận 3"
+  },
+  "description": "Phòng rộng rãi, thoáng mát, gần chợ",
+  "isHidden": true,
+  "area": 25,
+  "beds": 2,
+  "amenities": [
+    "WiFi ",
+    "Nhà bếp "
+  ],
+  "category": "KTX",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467918/tro-so-system/roomImages/opds79onjvbl70d68zpo.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-11T03:04:40.742Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:06:06.512Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675906d4eecac185bec15c98"
+  },
+  "roomId": "fpIuU6M",
+  "title": "Phòng trọ tại quận 3",
+  "slug": "phong-tro-tai-quan-3-0010",
+  "price": 3500000,
+  "address": {
+    "province": "Hồ Chí Minh",
+    "district": "Quận 3",
+    "detailAddress": "456 Đường XYZ, Quận 3"
+  },
+  "description": "Phòng rộng rãi, thoáng mát, gần chợ",
+  "isHidden": true,
+  "area": 25,
+  "beds": 2,
+  "amenities": [
+    "WiFi ",
+    "Nhà bếp "
+  ],
+  "category": "KTX",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467918/tro-so-system/roomImages/opds79onjvbl70d68zpo.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-11T03:28:20.216Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:29:34.803Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675906d4eecac185bec15c97"
+  },
+  "roomId": "7BGTKx2",
+  "title": "Phòng trọ tại quận 1",
+  "slug": "phong-tro-tai-quan-1-0008",
+  "price": 4000000,
+  "address": {
+    "province": "Bến Tre",
+    "district": "Huyện Chợ Lách",
+    "detailAddress": "123 Đường ABC, Quận 1"
+  },
+  "description": "Phòng sạch sẽ, thoáng mát, đầy đủ tiện nghi, cách âm",
+  "isHidden": true,
+  "area": 25,
+  "beds": 2,
+  "amenities": [
+    "Gác "
+  ],
+  "category": "Truyền thống",
+  "status": true,
+  "roomImages": [
+    "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467915/tro-so-system/roomImages/vcc5hrgrk24yttuoqtrk.jpg"
+  ],
+  "roomOwner": {
+    "$oid": "67529e30f7588b1a2464a52b"
+  },
+  "createdAt": {
+    "$date": "2024-12-11T03:28:20.215Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:29:29.907Z"
+  },
+  "__v": 0
+}]

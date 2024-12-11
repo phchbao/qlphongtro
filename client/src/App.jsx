@@ -42,7 +42,7 @@ import {
     OwnerNoti,
     LodgerNoti,
     ManagementPage,
-    ManagementRoom,
+    NotiAll,
     ManagementElectric,
     ManagementWater,
     ManagementService,
@@ -124,8 +124,7 @@ function App() {
                         <Route path="chat" element={<OwnerChat />} />
                         <Route path="noti" element={<OwnerNoti />} />
                         <Route path="/owner/manage" element={<ManagementPage />}>
-                            <Route path="rooms" element={<ManagementRoom />}/>
-                            <Route path="contacts" element={<div>Quản lý Liên hệ</div>} />
+                            <Route path="notiall" element={<NotiAll/>}/>
                             <Route path="electric" element={<ManagementElectric />} />
                             <Route path="water" element={<ManagementWater />} />
                             <Route path="services" element={<ManagementService />} />

@@ -41,10 +41,12 @@ const RentDetailSchema = new mongoose.Schema(
     electric: {
       type: Number,
       required: [true, "Nhập số kWh điện"],
+      min: [0, "Số điện không bé hơn 0"],
     },
     water: {
       type: Number,
       required: [true, "Nhập số m3 nước"],
+      min: [0, "Số nước không bé hơn 0"],
     },
     service: {
       type: Number,
@@ -55,11 +57,15 @@ const RentDetailSchema = new mongoose.Schema(
       type: Number,
       default: 2000, // Giá mặc định là 2000
       required: [true, "Nhập giá điện"],
+      min: [1893, "Giá điện không bé hơn mức quy định (1893đ/kWh)"],
+      max: [2880, "Giá điện không lớn hơn mức quy định (2880đ/kWh)"],
     },
     waterPrice: {
       type: Number,
-      default: 12000, // Giá mặc định là 12000
+      default: 25000, // Giá mặc định là 12000
       required: [true, "Nhập giá nước"],
+      min: [8509, "Giá nước không bé hơn mức quy định (1893đ/m3)"],
+      max: [27051, "Giá nước không lớn hơn mức quy định (2880đ/m3)"],
     },
     isHidden: {
       type: Boolean,

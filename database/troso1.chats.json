@@ -1,0 +1,72 @@
+[{
+  "_id": {
+    "$oid": "6754d73a37e69373e523a7f9"
+  },
+  "chatUsers": [
+    "67529e30f7588b1a2464a52b",
+    "6752ac9287804d45e8f6d41a"
+  ],
+  "message": "Xin chào",
+  "sender": "67529e30f7588b1a2464a52b",
+  "createdAt": {
+    "$date": "2024-12-07T23:16:10.320Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T23:16:10.320Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675903f1eecac185bec15c0f"
+  },
+  "chatUsers": [
+    "67529e30f7588b1a2464a52b",
+    "6752ac9287804d45e8f6d41a"
+  ],
+  "message": "hi",
+  "sender": "67529e30f7588b1a2464a52b",
+  "createdAt": {
+    "$date": "2024-12-11T03:16:01.182Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:16:01.182Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675903feeecac185bec15c16"
+  },
+  "chatUsers": [
+    "6752ac9287804d45e8f6d41a",
+    "6752a5b7f7588b1a2464a5eb"
+  ],
+  "message": "ba",
+  "sender": "6752ac9287804d45e8f6d41a",
+  "createdAt": {
+    "$date": "2024-12-11T03:16:14.871Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:16:14.871Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675907a2eecac185bec15d37"
+  },
+  "chatUsers": [
+    "6752ac9287804d45e8f6d41a",
+    "6752a5b7f7588b1a2464a5eb"
+  ],
+  "message": "2",
+  "sender": "6752ac9287804d45e8f6d41a",
+  "createdAt": {
+    "$date": "2024-12-11T03:31:46.916Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T03:31:46.916Z"
+  },
+  "__v": 0
+}]

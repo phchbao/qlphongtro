@@ -19,7 +19,7 @@ const ChatInput = ({ handleSendMessage }) => {
         <div className="flex items-center gap-1 md:gap-4">
           <input
             type="text"
-            placeholder="Type a message"
+            placeholder="Soạn tin nhắn"
             value={msgInput}
             onChange={(e) => {
               setMsgInput(e.target.value);

@@ -28,9 +28,16 @@ const RoomDetailCard = ({
           <div className="flex flex-col gap-2">
             <h3 className="font-semibold">{title}</h3>
             <p className="-ml-1 text-base tracking-tight">
-              <LocationOnOutlinedIcon sx={{ color: "#019149" }} />
-              {address?.detailAddress}
-            </p>
+  <LocationOnOutlinedIcon sx={{ color: "#019149" }} />
+  <a
+    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address?.detailAddress)}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-500 underline hover:text-blue-700"
+  >
+    {address?.detailAddress}
+  </a>
+</p>
             <div className="">
               <p className="font-robotoNormal text-xs font-semibold tracking-tight">
                 Đăng ngày: {dateFormatter(createdAt)}

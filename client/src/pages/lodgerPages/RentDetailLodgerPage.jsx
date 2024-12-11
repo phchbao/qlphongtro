@@ -74,7 +74,7 @@ const RentDetailLodgerPage = () => {
     return (
       <>
         <div className="flex flex-col mx-10">
-          <h1 className="mt-6 text-center">Không tìm thấy chi tiết thuê</h1>
+          <h1 className="mt-6 text-center">Không tìm thấy hóa đơn</h1>
         </div>
       </>
     );
@@ -82,7 +82,7 @@ const RentDetailLodgerPage = () => {
   return (
     <>
       <main className="mb-12 mt-10 mx-4 md:mx-12">
-        <h3 className="mb-4 font-heading font-bold">Chi tiết thuê</h3>
+        <h3 className="mb-4 font-heading font-bold">Hóa đơn</h3>
         <section className="flex flex-col gap-12 rounded-md md:flex-row">
           <div className="w-full md:w-2/3">
             <ImageCarousal
@@ -140,11 +140,11 @@ const RentDetailLodgerPage = () => {
                 <span className="font-medium">Trạng thái thanh toán</span>{" "}
                 {isRentPaid === true ? (
                   <>
-                    <DoneRoundedIcon color="success" /> Paid
+                    <DoneRoundedIcon color="success" /> Đã thanh toán
                   </>
                 ) : (
                   <>
-                    <CloseRoundedIcon color="error" /> Not Paid
+                    <CloseRoundedIcon color="error" /> Chưa thanh toán
                   </>
                 )}
               </p>

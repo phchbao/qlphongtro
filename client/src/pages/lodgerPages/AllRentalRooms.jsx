@@ -117,7 +117,7 @@ const AllRentalRooms = () => {
                         color: "#0496b4",
                       }}
                     >
-                      CHI TIẾT BÊN THUÊ
+                      CHI TIẾT
                     </Button>
                   </Link>
                 </div>

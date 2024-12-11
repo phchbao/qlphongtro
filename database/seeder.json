@@ -1,0 +1,42 @@
+[
+  {
+    "roomId": "123abc",
+    "title": "Phòng trọ tại quận 1",
+    "price": 3000000,
+    "description": "Phòng sạch sẽ, thoáng mát, đầy đủ tiện nghi",
+    "address": {
+      "province": "Hồ Chí Minh",
+      "district": "Quận 1",
+      "detailAddress": "123 Đường ABC, Quận 1"
+    },
+    "category": "Chung cư mini",
+    "area": 20,
+    "beds": 1,
+    "amenities": ["WiFi ", "Điều hòa "],
+    "roomImages": [
+      "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467915/tro-so-system/roomImages/vcc5hrgrk24yttuoqtrk.jpg"
+    ],
+    "status": true,
+    "roomOwner": "64f6b2c3e7b1e2f91eabcdef"
+  },
+  {
+    "roomId": "456def",
+    "title": "Phòng trọ tại quận 3",
+    "price": 3500000,
+    "description": "Phòng rộng rãi, thoáng mát, gần chợ",
+    "address": {
+      "province": "Hồ Chí Minh",
+      "district": "Quận 3",
+      "detailAddress": "456 Đường XYZ, Quận 3"
+    },
+    "category": "KTX",
+    "area": 25,
+    "beds": 2,
+    "amenities": ["WiFi ", "Nhà bếp "],
+    "roomImages": [
+      "https://res.cloudinary.com/dckkixmx2/image/upload/v1733467918/tro-so-system/roomImages/opds79onjvbl70d68zpo.jpg"
+    ],
+    "status": true,
+    "roomOwner": "64f6b2c3e7b1e2f91eabcdef"
+  }
+]
