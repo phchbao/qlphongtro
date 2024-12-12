@@ -1,8 +1,8 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { getAllRentDetailsOwnerView } from "../../features/rentDetailOwner/rentDetailOwnerSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { Button } from "@mui/material";
+import { Button, ButtonGroup } from "@mui/material";
 import { PageLoading, RentDetailComponent, Footer } from "../../components";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 
@@ -13,6 +13,8 @@ const AllRentDetailPage = () => {
   const { allRentDetails, isLoading } = useSelector(
     (state) => state.rentDetailOwner
   );
+
+  const [filterStatus, setFilterStatus] = useState("all"); // Trạng thái lọc
 
   useEffect(() => {
     dispatch(getAllRentDetailsOwnerView());
@@ -35,6 +37,13 @@ const AllRentDetailPage = () => {
       </div>
     );
 
+  // Lọc danh sách hóa đơn
+  const filteredRentDetails = allRentDetails?.filter((detail) => {
+    if (filterStatus === "paid") return detail.isRentPaid;
+    if (filterStatus === "unpaid") return !detail.isRentPaid;
+    return true; // "all"
+  });
+
   return (
     <>
       <main className="flex flex-col mb-12 mt-6 md:items-start md:ml-10">
@@ -49,14 +58,32 @@ const AllRentDetailPage = () => {
             Tạo hóa đơn
           </Button>
         </div>
-        <h3 className="my-4 font-heading font-bold text-center">
-          Hóa đơn
-        </h3>
+        <div className="self-center md:self-start mb-4">
+          <ButtonGroup variant="outlined" aria-label="outlined button group">
+            <Button
+              variant={filterStatus === "all" ? "contained" : "outlined"}
+              onClick={() => setFilterStatus("all")}
+            >
+              Tất cả
+            </Button>
+            <Button
+              variant={filterStatus === "paid" ? "contained" : "outlined"}
+              onClick={() => setFilterStatus("paid")}
+            >
+              Đã thanh toán
+            </Button>
+            <Button
+              variant={filterStatus === "unpaid" ? "contained" : "outlined"}
+              onClick={() => setFilterStatus("unpaid")}
+            >
+              Chưa thanh toán
+            </Button>
+          </ButtonGroup>
+        </div>
+        <h3 className="my-4 font-heading font-bold text-center">Hóa đơn</h3>
         <div className="flex flex-wrap gap-8 justify-center mx-4 md:justify-start md:mx-0">
-          {allRentDetails?.map((rentDetail) => (
-            <>
-              <RentDetailComponent key={rentDetail._id} {...rentDetail} />
-            </>
+          {filteredRentDetails?.map((rentDetail) => (
+            <RentDetailComponent key={rentDetail._id} {...rentDetail} />
           ))}
         </div>
       </main>

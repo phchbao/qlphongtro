@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { getAllRoom } from "../../features/roomLodger/roomLodgerSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { RoomCard, Footer, SearchAndFilter } from "../../components";
-import { Pagination, CircularProgress } from "@mui/material";
+import { Pagination, PaginationItem, CircularProgress } from "@mui/material";
 
 const Homepage = () => {
   const dispatch = useDispatch();
@@ -109,6 +109,33 @@ const Homepage = () => {
         onChange={handlePageChange}
         color="secondary"
         className="flex justify-center mb-12"
+        renderItem={(item) => {
+          if (item.type === "first") {
+            return (
+              <PaginationItem
+                {...item}
+                disabled={query?.page === 1}
+                onClick={() => setQuery({ ...query, page: 1 })}
+                aria-label="Trang đầu tiên"
+                label="<<"
+              />
+            );
+          }
+          if (item.type === "last") {
+            return (
+              <PaginationItem
+                {...item}
+                disabled={query?.page === numberOfPages}
+                onClick={() => setQuery({ ...query, page: numberOfPages })}
+                aria-label="Trang cuối cùng"
+                label=">>"
+              />
+            );
+          }
+          return <PaginationItem {...item} />;
+        }}
+        showFirstButton
+        showLastButton
       />
       <Footer />
     </>

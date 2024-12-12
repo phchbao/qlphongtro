@@ -159,10 +159,14 @@ const rentDetailOwnerSlice = createSlice({
         state.isLoading = true;
       })
       .addCase(getAllRentDetailsOwnerView.fulfilled, (state, action) => {
-        state.allRentDetails = action.payload.rentDetails;
+        // Cập nhật allRentDetails và trạng thái thanh toán
+        state.allRentDetails = action.payload.rentDetails.map((detail) => ({
+          ...detail,
+          isRentPaid: detail.rentStatus, // Gắn isRentPaid từ API response
+        }));
         state.isLoading = false;
         state.alertFlag = false;
-      })
+      })      
       .addCase(getAllRentDetailsOwnerView.rejected, (state, action) => {
         state.isLoading = false;
         state.alertFlag = true;

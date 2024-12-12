@@ -2,7 +2,7 @@ import { useEffect, useState, useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllOwnerRoom } from "../../features/roomOwner/roomOwnerSlice";
 import { Footer, RoomCard, SearchAndFilterOwner } from "../../components";
-import { Button, Pagination, CircularProgress } from "@mui/material";
+import { Button, Pagination, PaginationItem, CircularProgress } from "@mui/material";
 
 const Homepage = () => {
   const dispatch = useDispatch();
@@ -14,7 +14,7 @@ const Homepage = () => {
   const initialQuery = {
     page: 1,
     search: "",
-    status:"",
+    status: "",
     category: "all",
     lowerLimit: "",
     upperLimit: "",
@@ -62,53 +62,78 @@ const Homepage = () => {
     dispatch(getAllOwnerRoom({ ...initialQuery }));
   }, [dispatch]);
 
-    return (
-      <>
-        <div className="mt-8">
-          <SearchAndFilterOwner
-            handleSearchSubmit={handleSearchSubmit}
-            handleValueChange={handleValueChange}
-            clearFilter={clearFilter}
-            {...query}
-          />
-  
-          {isLoading ? (
-            <div className="flex justify-center mt-12 h-96">
-              <CircularProgress size={"8rem"} />
-            </div>
-          ) : (
-            <>
-              <h3 className="text-center mt-8 mb-6 font-heading font-bold">
-                Danh sách phòng
-              </h3>
-  
-              {allRoom?.length === 0 ? (
-                <h2 className="text-center mt-8 mb-6 font-heading font-bold">
-                  Không tìm thấy phòng nào
-                </h2>
-              ) : (
-                <main className="flex flex-wrap gap-5 justify-center mb-12 md:justify-center mx-4 md:mx-0">
-                  {allRoom?.map((item) => {
-                    return <RoomCard key={item._id} {...item} fromOwnerUser={true}/>;
-                  })}
-                </main>
-              )}
-            </>
-          )}
-        </div>
-  
-        <Pagination
-          count={numberOfPages || 1}
-          page={query?.page}
-          onChange={handlePageChange}
-          color="secondary"
-          className="flex justify-center mb-12"
+  return (
+    <>
+      <div className="mt-8">
+        <SearchAndFilterOwner
+          handleSearchSubmit={handleSearchSubmit}
+          handleValueChange={handleValueChange}
+          clearFilter={clearFilter}
+          {...query}
         />
-        <Footer />
-      </>
-    );
-  };
-  
-  export default Homepage;
 
+        {isLoading ? (
+          <div className="flex justify-center mt-12 h-96">
+            <CircularProgress size={"8rem"} />
+          </div>
+        ) : (
+          <>
+            <h3 className="text-center mt-8 mb-6 font-heading font-bold">
+              Danh sách phòng
+            </h3>
 
+            {allRoom?.length === 0 ? (
+              <h2 className="text-center mt-8 mb-6 font-heading font-bold">
+                Không tìm thấy phòng nào
+              </h2>
+            ) : (
+              <main className="flex flex-wrap gap-5 justify-center mb-12 md:justify-center mx-4 md:mx-0">
+                {allRoom?.map((item) => {
+                  return <RoomCard key={item._id} {...item} fromOwnerUser={true} />;
+                })}
+              </main>
+            )}
+          </>
+        )}
+      </div>
+
+      <Pagination
+        count={numberOfPages || 1}
+        page={query?.page}
+        onChange={handlePageChange}
+        color="secondary"
+        className="flex justify-center mb-12"
+        renderItem={(item) => {
+          if (item.type === "first") {
+            return (
+              <PaginationItem
+                {...item}
+                disabled={query?.page === 1}
+                onClick={() => setQuery({ ...query, page: 1 })}
+                aria-label="Trang đầu tiên"
+                label="<<"
+              />
+            );
+          }
+          if (item.type === "last") {
+            return (
+              <PaginationItem
+                {...item}
+                disabled={query?.page === numberOfPages}
+                onClick={() => setQuery({ ...query, page: numberOfPages })}
+                aria-label="Trang cuối cùng"
+                label=">>"
+              />
+            );
+          }
+          return <PaginationItem {...item} />;
+        }}
+        showFirstButton
+        showLastButton
+      />
+      <Footer />
+    </>
+  );
+};
+
+export default Homepage;
