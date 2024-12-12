@@ -95,7 +95,7 @@ const createRentDetail = async (req, res) => {
  * @returns {object} Rent Details Array
  */
 const getAllRentDetailsOwnerView = async (req, res) => {
-  const rentDetails = await RentDetail.find({ owner: req.user.userId,  isHidden: false, })
+  const rentDetails = await RentDetail.find({ owner: req.user.userId, isHidden: false })
     .populate({
       path: "room",
       select: "_id title price address category roomImages slug",
@@ -110,8 +110,17 @@ const getAllRentDetailsOwnerView = async (req, res) => {
     })
     .sort({ createdAt: -1 });
 
-  res.json({ rentDetails, count: rentDetails.length });
+  // Thêm kiểm tra isRentPaid
+  const rentDetailsWithStatus = await Promise.all(
+    rentDetails.map(async (rentDetail) => {
+      const rentStatus = await rentDetail.isRentPaid(); // Kiểm tra trạng thái thanh toán
+      return { ...rentDetail._doc, rentStatus }; // Gắn thêm trường rentStatus vào kết quả
+    })
+  );
+
+  res.json({ rentDetails: rentDetailsWithStatus, count: rentDetailsWithStatus.length });
 };
+
 
 /**
  * @description Get all the Rent Details for owner user
